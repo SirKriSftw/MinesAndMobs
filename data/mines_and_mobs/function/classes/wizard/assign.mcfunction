@@ -1,0 +1,7 @@
+item replace entity @s armor.chest with minecraft:leather_chestplate[minecraft:enchantment_glint_override=false, minecraft:enchantments={"minecraft:binding_curse": 1}, minecraft:tooltip_display={hidden_components:[enchantments]}, minecraft:unbreakable={}, minecraft:attribute_modifiers=[], minecraft:dyed_color=13061821, minecraft:custom_name=[{"text":"Wizard's Shirt","italic":false,"color":"#CC44CC"}]]
+item replace entity @s armor.legs with minecraft:leather_leggings[minecraft:enchantment_glint_override=false, minecraft:enchantments={"minecraft:binding_curse": 1}, minecraft:tooltip_display={hidden_components:[enchantments]}, minecraft:unbreakable={}, minecraft:attribute_modifiers=[], minecraft:dyed_color=13061821, minecraft:custom_name=[{"text":"Wizard's Pants","italic":false,"color":"#CC44CC"}]]
+item replace entity @s armor.feet with minecraft:leather_boots[minecraft:enchantment_glint_override=false, minecraft:enchantments={"minecraft:binding_curse": 1}, minecraft:tooltip_display={hidden_components:[enchantments]}, minecraft:unbreakable={}, minecraft:attribute_modifiers=[], minecraft:dyed_color=13061821, minecraft:custom_name=[{"text":"Wizard's Shoes","italic":false,"color":"#CC44CC"}]]
+
+execute unless entity @s[tag=wizard] run function mines_and_mobs:classes/wizard/weapon
+function mines_and_mobs:classes/clear_tags
+tag @s add wizard

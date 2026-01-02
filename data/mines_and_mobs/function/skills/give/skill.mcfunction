@@ -1,0 +1,2 @@
+execute if score #Current selectedSkill matches 1 run function mines_and_mobs:skills/effects/smoke_bomb/give
+execute if score #Current selectedSkill matches 2 run function mines_and_mobs:skills/effects/mega_jump/give

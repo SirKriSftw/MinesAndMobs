@@ -1,0 +1,30 @@
+[
+    {
+        "raceName": "Human",
+        "hex_color": "#FFFFFF"
+    }, {
+        "raceName": "Elf",
+        "hex_color": "#00FF00",
+        "profile": "id:[I;2080793942,-524468218,-1541115779,1949756395],  properties:[{name:'textures',value:'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWYxMGViZWNkN2Y0NGRlZjYwZmIwYjc5MjRkMDZjOWI4OWZlNzUyMzQ2MjRhMmY3ZjMwYTg0ZTM3Mjg2OTBlMyJ9fX0='}]"
+    }, {
+        "raceName": "Dwarf",
+        "hex_color": "#FF0000",
+        "profile": "id:[I;2080793942,-524468218,-1541115779,1949756395],  properties:[{name:'textures',value:'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzIxNmEwYTU3ZjE2NWM3ZTZkYmM3MjJmNTI5NmZhNWI5N2M1YzJjNGJjYjg3MWE3YjJjYTFjNDY0YWI4ZGY2NCJ9fX0='}]",
+        "scale": -0.2
+    }, {
+        "raceName": "Halfling",
+        "hex_color": "#0000FF",
+        "profile": "name:'SirKriSftw'",
+        "scale": -0.5
+    }, {
+        "raceName": "Orc",
+        "hex_color": "#005500",
+        "profile": "id:[I;2080793942,-524468218,-1541115779,1949756395],  properties:[{name:'textures',value:'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODJkNmI2MjJmMDZkYmQzYjE5YmY3NjUzOGNhNzA0NzMzZWQwYjAyZTQ0MzhjOWQ4OTY4YTA0YmZiYjI4ZWY2MyJ9fX0='}]",
+        "scale": 0.2
+    }, {
+        "raceName": "Dragonborn",
+        "hex_color": "#FF00FF",
+        "profile": "id:[I;2080793942,-524468218,-1541115779,1949756395],properties:[{name:'textures',value:'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmRkMTU2N2NmMjk2MjZjZThjZDZmMGZmMjBjNmFjZmU1OTY5NDYzMDdlN2ZiZTliMmNhMjQwMTU0YmZhMmVlNiJ9fX0='}]",
+        "canGlide": true
+    }
+]

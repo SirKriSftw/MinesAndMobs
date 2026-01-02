@@ -1,0 +1,7 @@
+item replace entity @s armor.chest with minecraft:leather_chestplate[minecraft:enchantment_glint_override=false, minecraft:enchantments={"minecraft:binding_curse": 1}, minecraft:tooltip_display={hidden_components:[enchantments]}, minecraft:unbreakable={}, minecraft:attribute_modifiers=[], minecraft:dyed_color=1908001, minecraft:custom_name=[{"text":"Assassin's Shirt","italic":false,"color":"#666666"}]]
+item replace entity @s armor.legs with minecraft:leather_leggings[minecraft:enchantment_glint_override=false, minecraft:enchantments={"minecraft:binding_curse": 1}, minecraft:tooltip_display={hidden_components:[enchantments]}, minecraft:unbreakable={}, minecraft:attribute_modifiers=[], minecraft:dyed_color=1908001, minecraft:custom_name=[{"text":"Assassin's Pants","italic":false,"color":"#666666"}]]
+item replace entity @s armor.feet with minecraft:leather_boots[minecraft:enchantment_glint_override=false, minecraft:enchantments={"minecraft:binding_curse": 1}, minecraft:tooltip_display={hidden_components:[enchantments]}, minecraft:unbreakable={}, minecraft:attribute_modifiers=[], minecraft:dyed_color=1908001, minecraft:custom_name=[{"text":"Assassin's Shoes","italic":false,"color":"#666666"}]]
+
+execute unless entity @s[tag=assassin] run function mines_and_mobs:classes/assassin/weapon
+function mines_and_mobs:classes/clear_tags
+tag @s add assassin

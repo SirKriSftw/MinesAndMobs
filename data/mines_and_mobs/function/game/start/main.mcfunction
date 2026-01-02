@@ -1,0 +1,1 @@
+function mines_and_mobs:game/start/check

@@ -1,0 +1,4 @@
+item replace entity @s armor.head with minecraft:player_head[minecraft:custom_name=[{"text":"Orc","italic":false,"color":"#005500"}], minecraft:enchantment_glint_override=false, minecraft:enchantments={"minecraft:binding_curse": 1}, minecraft:tooltip_display={hidden_components:[enchantments]}, minecraft:profile={id:[I;2080793942,-524468218,-1541115779,1949756395],  properties:[{name:'textures',value:'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODJkNmI2MjJmMDZkYmQzYjE5YmY3NjUzOGNhNzA0NzMzZWQwYjAyZTQ0MzhjOWQ4OTY4YTA0YmZiYjI4ZWY2MyJ9fX0='}]}, minecraft:attribute_modifiers=[{type:"minecraft:scale", amount: 0.2, operation: add_value, id:"123123123"}]]
+
+function mines_and_mobs:races/clear_tags
+tag @s add orc
