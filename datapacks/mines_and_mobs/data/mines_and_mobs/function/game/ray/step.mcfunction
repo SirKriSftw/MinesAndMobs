@@ -1,10 +1,12 @@
 # Move Forward-------------------------
 tp @s ^ ^ ^0.1
 $particle $(particle) ~ ~ ~ $(particle_data)
+
 # Mob Detection-------------------------
-$execute at @s positioned ~ ~ ~ as @e[tag=enemy,distance=..2.5,tag=!hit, tag=enemy] positioned ~ ~0.5 ~ if predicate mines_and_mobs:is_hit run function mines_and_mobs:game/ray/detection/mob {on_hit_mob:"$(on_hit_mob)"}
-execute if data entity @s {data:{hit_mob:1b, p_mobs:0}} run kill @s
-execute if data entity @s {data:{hit_mob:1b, p_mobs:0}} run return 0
+$execute at @s positioned ~ ~ ~ as @e[tag=enemy,distance=..2.5,tag=!hit] positioned ~ ~0.5 ~ if predicate mines_and_mobs:is_hit run function mines_and_mobs:game/ray/detection/mob {on_hit_mob:"$(on_hit_mob)"}
+execute if data entity @s {data:{hit_mob:1b, p_mobs:0b}} unless data entity @s {data: {chain:1}} run kill @s
+execute if data entity @s {data:{hit_mob:1b, p_mobs:0b}} unless data entity @s {data: {chain:1}} run return 0
+execute if data entity @s {data:{hit_mob:1b, chain:1}} run function mines_and_mobs:game/ray/detection/chain
 
 data modify entity @s data.hit_mob set value 0b
 
@@ -26,4 +28,4 @@ execute store result entity @s data.range int 1 run scoreboard players get @s Ra
 # Recursion-------------------------
 $execute if score @s RayCast matches 1.. as @s at @s run function mines_and_mobs:game/ray/step {particle:"$(particle)", particle_data:"$(particle_data)", end_particle:"$(end_particle)", end_particle_data:"$(end_particle_data)", on_hit_mob:"$(on_hit_mob)", on_hit_block:"$(on_hit_block)"}
 # Cleanup---------------------------
-$execute if score @s RayCast matches 0..5 at @s run function mines_and_mobs:game/ray/end {end_particle:"$(end_particle)", end_particle_data:"$(end_particle_data)"}
+$execute if score @s RayCast matches 0..5 at @s as @s run function mines_and_mobs:game/ray/end {end_particle:"$(end_particle)", end_particle_data:"$(end_particle_data)"}

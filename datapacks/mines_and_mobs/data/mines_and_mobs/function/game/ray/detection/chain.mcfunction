@@ -1,0 +1,1 @@
+execute at @s if entity @e[tag=enemy,distance=..5,tag=!hit, limit=1] run tp @s ~ ~ ~ facing entity @e[tag=enemy,distance=..5,tag=!hit, limit=1] eyes
