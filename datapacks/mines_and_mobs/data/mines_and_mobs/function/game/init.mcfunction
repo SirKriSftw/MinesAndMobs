@@ -15,3 +15,5 @@ scoreboard objectives add Timer dummy
 scoreboard objectives add Seconds dummy
 
 scoreboard objectives add isCrouching minecraft.custom:minecraft.sneak_time
+
+function mines_and_mobs:game/ray/default
