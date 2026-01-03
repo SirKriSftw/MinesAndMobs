@@ -15,9 +15,10 @@ execute at @s align x run execute store result score #x RayCast run data get ent
 execute at @s align y run execute store result score #y RayCast run data get entity @s Pos[1] 1
 execute at @s align z run execute store result score #z RayCast run data get entity @s Pos[2] 1
 
-execute unless block ~ ~ ~ air run function mines_and_mobs:game/ray/detection/block with storage mines_and_mobs:ray data
-execute if data entity @s {data:{hit_block:1b, p_blocks:0}} run kill @s
-execute if data entity @s {data:{hit_block:1b, p_blocks:0}} run return 0
+execute if data entity @s {data:{bounce:0}} unless block ~ ~ ~ air run function mines_and_mobs:game/ray/detection/block with storage mines_and_mobs:ray data
+execute if data entity @s {data:{bounce:1}} unless block ~ ~ ~ air run function mines_and_mobs:game/ray/detection/bounce with storage mines_and_mobs:ray data
+execute if data entity @s {data:{hit_block:1b, p_blocks:0}} unless data entity @s {data:{bounce:1b}} run kill @s
+execute if data entity @s {data:{hit_block:1b, p_blocks:0}} unless data entity @s {data:{bounce:1b}} run return 0
 
 # Range Calculation-------------------
 execute store result score @s RayCast run data get entity @s data.range
@@ -27,4 +28,5 @@ execute store result entity @s data.range int 1 run scoreboard players get @s Ra
 # Recursion-------------------------
 execute if score @s RayCast matches 1.. as @s at @s run function mines_and_mobs:game/ray/step with storage mines_and_mobs:ray data
 # Cleanup---------------------------
+execute if score @s RayCast matches 0..5 at @s run particle minecraft:smoke ~ ~ ~ 0.2 0.2 0.2 0.1 20
 kill @s
