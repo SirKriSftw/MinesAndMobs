@@ -1,5 +1,14 @@
 [
     {
+        "id": 0,
+        "name": "Test",
+        "cast": 0.1,
+        "cooldown": 1,
+        "animation": "bow",
+        "sound": "minecraft:block.candle.extinguish",
+        "group":"test"
+    }
+    , {
         "id": 1,
         "name": "Smoke Bomb",
         "cast": 5.0,

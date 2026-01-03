@@ -1,0 +1,1 @@
+execute as @s at @s run function mines_and_mobs:game/ray/test/cast
