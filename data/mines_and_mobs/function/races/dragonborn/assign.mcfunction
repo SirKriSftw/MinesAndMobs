@@ -1,4 +1,0 @@
-item replace entity @s armor.head with minecraft:player_head[minecraft:custom_name=[{"text":"Dragonborn","italic":false,"color":"#FF00FF"}], minecraft:enchantment_glint_override=false, minecraft:enchantments={"minecraft:binding_curse": 1}, minecraft:tooltip_display={hidden_components:[enchantments]}, minecraft:profile={id:[I;2080793942,-524468218,-1541115779,1949756395],properties:[{name:'textures',value:'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmRkMTU2N2NmMjk2MjZjZThjZDZmMGZmMjBjNmFjZmU1OTY5NDYzMDdlN2ZiZTliMmNhMjQwMTU0YmZhMmVlNiJ9fX0='}]}, minecraft:glider={}]
-
-function mines_and_mobs:races/clear_tags
-tag @s add dragonborn

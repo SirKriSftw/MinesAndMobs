@@ -1,0 +1,2 @@
+function mines_and_mobs:skills/effects/smoke_bomb/effect
+function mines_and_mobs:skills/effects/smoke_bomb/give

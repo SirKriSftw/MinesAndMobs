@@ -1,0 +1,7 @@
+item replace entity @s armor.chest with minecraft:leather_chestplate[minecraft:enchantment_glint_override=false, minecraft:enchantments={"minecraft:binding_curse": 1}, minecraft:tooltip_display={hidden_components:[enchantments]}, minecraft:unbreakable={}, minecraft:attribute_modifiers=[], minecraft:dyed_color=16701501, minecraft:custom_name=[{"text":"Paladin's Shirt","italic":false,"color":"#FFFF00"}]]
+item replace entity @s armor.legs with minecraft:leather_leggings[minecraft:enchantment_glint_override=false, minecraft:enchantments={"minecraft:binding_curse": 1}, minecraft:tooltip_display={hidden_components:[enchantments]}, minecraft:unbreakable={}, minecraft:attribute_modifiers=[], minecraft:dyed_color=16701501, minecraft:custom_name=[{"text":"Paladin's Pants","italic":false,"color":"#FFFF00"}]]
+item replace entity @s armor.feet with minecraft:leather_boots[minecraft:enchantment_glint_override=false, minecraft:enchantments={"minecraft:binding_curse": 1}, minecraft:tooltip_display={hidden_components:[enchantments]}, minecraft:unbreakable={}, minecraft:attribute_modifiers=[], minecraft:dyed_color=16701501, minecraft:custom_name=[{"text":"Paladin's Shoes","italic":false,"color":"#FFFF00"}]]
+
+execute unless entity @s[tag=paladin] run function mines_and_mobs:classes/paladin/weapon
+function mines_and_mobs:classes/clear_tags
+tag @s add paladin

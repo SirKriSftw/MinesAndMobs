@@ -1,0 +1,63 @@
+[{
+    "className": "Assassin",
+    "dyed_color": 1908001,
+    "hex_color": "#666666",
+    "weapon": "minecraft:stone_sword",
+    "weapon_name": "Dagger"
+}
+, {
+    "className": "Barbarian",
+    "dyed_color": 11546150,
+    "hex_color": "#FF0000",
+    "weapon": "minecraft:mace",
+    "weapon_name": "Mace"
+}
+, {
+    "className": "Bard",
+    "dyed_color": 1481884,
+    "hex_color": "#009999",
+    "weapon": "minecraft:crossbow",
+    "weapon_name": "Crossbow"
+}
+, {
+    "className": "Cleric",
+    "dyed_color": 15961002,
+    "hex_color": "#FF9999",
+    "weapon": "minecraft:golden_spear",
+    "weapon_name": "Holy Scepter"
+}
+, {
+    "className": "Druid",
+    "dyed_color": 6192150,
+    "hex_color": "#009900",
+    "weapon": "minecraft:trident",
+    "weapon_name": "Hunting Spear"
+}
+, {
+    "className": "Monk",
+    "dyed_color": 16351261,
+    "hex_color": "#FFAA00",
+    "weapon": "minecraft:iron_hoe",
+    "weapon_name": "Scythe"
+}
+, {
+    "className": "Paladin",
+    "dyed_color": 16701501,
+    "hex_color": "#FFFF00",
+    "weapon": "minecraft:golden_sword",
+    "weapon_name": "Holy Sword"
+}
+, {
+    "className": "Ranger",
+    "dyed_color": 8439583,
+    "hex_color": "#00FF00",
+    "weapon": "minecraft:bow",
+    "weapon_name": "Composite Bow"
+}
+, {
+    "className": "Wizard",
+    "dyed_color": 13061821,
+    "hex_color": "#CC44CC",
+    "weapon": "minecraft:breeze_rod",
+    "weapon_name": "Wand"
+}]

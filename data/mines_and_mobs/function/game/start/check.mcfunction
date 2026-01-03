@@ -1,1 +1,0 @@
-execute as @a at @s if score @s isCrouching matches 1 if entity @e[tag=Start, distance=0..1] run function mines_and_mobs:game/start/warm_up

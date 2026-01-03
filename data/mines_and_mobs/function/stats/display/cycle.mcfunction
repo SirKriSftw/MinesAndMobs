@@ -1,1 +1,0 @@
-execute if score _Timer Timer matches 0 if score #IsEven Seconds matches 0 run function mines_and_mobs:stats/display/next

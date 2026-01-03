@@ -1,2 +1,0 @@
-clear @p *[minecraft:custom_data={mines_and_mobs_weapon:1b}]
-item replace entity @s weapon.mainhand with minecraft:crossbow[minecraft:custom_name={text:"Crossbow", color:"#009999", italic:false}, custom_data={mines_and_mobs_weapon:1b}, attribute_modifiers=[]]

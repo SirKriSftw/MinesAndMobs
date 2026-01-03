@@ -1,1 +1,0 @@
-execute as @e[tag=Lobby] at @s rotated as @s run function mines_and_mobs:game/lobby/float_rotate

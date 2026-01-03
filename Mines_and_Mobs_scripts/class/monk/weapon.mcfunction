@@ -1,2 +1,0 @@
-clear @p *[minecraft:custom_data={mines_and_mobs_weapon:1b}]
-item replace entity @s weapon.mainhand with minecraft:iron_hoe[minecraft:custom_name={text:"Scythe", color:"#FFAA00", italic:false}, custom_data={mines_and_mobs_weapon:1b}, attribute_modifiers=[]]

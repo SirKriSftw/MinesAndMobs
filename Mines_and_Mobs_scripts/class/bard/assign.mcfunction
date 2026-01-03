@@ -1,7 +1,0 @@
-item replace entity @s armor.chest with minecraft:leather_chestplate[minecraft:enchantment_glint_override=false, minecraft:enchantments={"minecraft:binding_curse": 1}, minecraft:tooltip_display={hidden_components:[enchantments]}, minecraft:unbreakable={}, minecraft:attribute_modifiers=[], minecraft:dyed_color=1481884, minecraft:custom_name=[{"text":"Bard's Shirt","italic":false,"color":"#009999"}]]
-item replace entity @s armor.legs with minecraft:leather_leggings[minecraft:enchantment_glint_override=false, minecraft:enchantments={"minecraft:binding_curse": 1}, minecraft:tooltip_display={hidden_components:[enchantments]}, minecraft:unbreakable={}, minecraft:attribute_modifiers=[], minecraft:dyed_color=1481884, minecraft:custom_name=[{"text":"Bard's Pants","italic":false,"color":"#009999"}]]
-item replace entity @s armor.feet with minecraft:leather_boots[minecraft:enchantment_glint_override=false, minecraft:enchantments={"minecraft:binding_curse": 1}, minecraft:tooltip_display={hidden_components:[enchantments]}, minecraft:unbreakable={}, minecraft:attribute_modifiers=[], minecraft:dyed_color=1481884, minecraft:custom_name=[{"text":"Bard's Shoes","italic":false,"color":"#009999"}]]
-
-execute unless entity @s[tag=bard] run function mines_and_mobs:classes/bard/weapon
-function mines_and_mobs:classes/clear_tags
-tag @s add bard

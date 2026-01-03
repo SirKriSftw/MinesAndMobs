@@ -1,0 +1,1 @@
+summon armor_stand ~ ~ ~ {equipment:{head:{components:{ }, count:1, id:"minecraft:player_head"}}, Tags:["Lobby", "Race", "human"], CustomName:[{text:"Human", color:"#FFFFFF"}], CustomNameVisible:1b,Invisible:1b, NoGravity:1b, ShowArms:1b, DisabledSlots:4144959}

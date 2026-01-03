@@ -1,7 +1,0 @@
-item replace entity @s armor.chest with minecraft:leather_chestplate[minecraft:enchantment_glint_override=false, minecraft:enchantments={"minecraft:binding_curse": 1}, minecraft:tooltip_display={hidden_components:[enchantments]}, minecraft:unbreakable={}, minecraft:attribute_modifiers=[], minecraft:dyed_color=11546150, minecraft:custom_name=[{"text":"Barbarian's Shirt","italic":false,"color":"#FF0000"}]]
-item replace entity @s armor.legs with minecraft:leather_leggings[minecraft:enchantment_glint_override=false, minecraft:enchantments={"minecraft:binding_curse": 1}, minecraft:tooltip_display={hidden_components:[enchantments]}, minecraft:unbreakable={}, minecraft:attribute_modifiers=[], minecraft:dyed_color=11546150, minecraft:custom_name=[{"text":"Barbarian's Pants","italic":false,"color":"#FF0000"}]]
-item replace entity @s armor.feet with minecraft:leather_boots[minecraft:enchantment_glint_override=false, minecraft:enchantments={"minecraft:binding_curse": 1}, minecraft:tooltip_display={hidden_components:[enchantments]}, minecraft:unbreakable={}, minecraft:attribute_modifiers=[], minecraft:dyed_color=11546150, minecraft:custom_name=[{"text":"Barbarian's Shoes","italic":false,"color":"#FF0000"}]]
-
-execute unless entity @s[tag=barbarian] run function mines_and_mobs:classes/barbarian/weapon
-function mines_and_mobs:classes/clear_tags
-tag @s add barbarian

@@ -1,2 +1,0 @@
-data modify storage mines_and_mobs:ray data set value {range:500f, p_mobs:0b, p_blocks:0b, on_hit_mob:'mines_and_mobs:game/ray/test/hit_mob', on_hit_block:'mines_and_mobs:game/ray/test/hit_block'}
-function mines_and_mobs:game/ray/cast with storage mines_and_mobs:ray data
