@@ -1,20 +1,44 @@
 {
   "stats": {
+    "minecraft:custom": {
+      "minecraft:interact_with_crafting_table": 1,
+      "minecraft:time_since_rest": 20929,
+      "minecraft:walk_one_cm": 1224289,
+      "minecraft:leave_game": 30,
+      "minecraft:damage_taken": 290,
+      "minecraft:mob_kills": 17,
+      "minecraft:play_time": 1620457,
+      "minecraft:damage_dealt": 2594,
+      "minecraft:open_shulker_box": 34,
+      "minecraft:jump": 896,
+      "minecraft:time_since_death": 20929,
+      "minecraft:aviate_one_cm": 5618,
+      "minecraft:drop": 171,
+      "minecraft:sprint_one_cm": 122382,
+      "minecraft:interact_with_smithing_table": 11,
+      "minecraft:fall_one_cm": 16094,
+      "minecraft:total_world_time": 1847787,
+      "minecraft:fly_one_cm": 1092918,
+      "minecraft:interact_with_anvil": 6,
+      "minecraft:crouch_one_cm": 12764,
+      "minecraft:sneak_time": 17258,
+      "minecraft:deaths": 4
+    },
     "minecraft:used": {
       "minecraft:orange_shulker_box": 4,
       "minecraft:repeater": 29,
       "minecraft:magenta_concrete": 1,
-      "minecraft:chain_command_block": 10,
-      "minecraft:stick": 3245,
+      "minecraft:chain_command_block": 25,
+      "minecraft:stick": 3702,
       "minecraft:red_concrete": 3,
       "minecraft:shulker_box": 7,
-      "minecraft:orange_concrete": 14,
+      "minecraft:orange_concrete": 38,
       "minecraft:firework_rocket": 20,
       "minecraft:test_instance_block": 1,
       "minecraft:yellow_stained_glass": 9,
       "minecraft:glass": 8,
       "minecraft:oak_sign": 24,
-      "minecraft:command_block": 92,
+      "minecraft:command_block": 96,
       "minecraft:crossbow": 60,
       "minecraft:carrot_on_a_stick": 70,
       "minecraft:pink_concrete": 1,
@@ -53,8 +77,8 @@
       "minecraft:light_blue_stained_glass": 5,
       "minecraft:yellow_concrete": 2,
       "minecraft:lever": 21,
-      "minecraft:white_concrete": 943,
-      "minecraft:oak_button": 2,
+      "minecraft:white_concrete": 957,
+      "minecraft:oak_button": 3,
       "minecraft:wind_charge": 7,
       "minecraft:redstone_block": 1,
       "minecraft:pink_stained_glass": 6,
@@ -71,16 +95,31 @@
       "minecraft:black_stained_glass": 11,
       "minecraft:ender_pearl": 1
     },
-    "minecraft:crafted": {
-      "minecraft:leather_chestplate": 1
+    "minecraft:dropped": {
+      "minecraft:item_frame": 1,
+      "minecraft:iron_ingot": 192,
+      "minecraft:command_block": 2,
+      "minecraft:sculk_sensor": 1,
+      "minecraft:acacia_boat": 1,
+      "minecraft:rabbit_foot": 128,
+      "minecraft:book": 64,
+      "minecraft:orange_stained_glass": 1,
+      "minecraft:blaze_powder": 128,
+      "minecraft:stick": 158,
+      "minecraft:golden_apple": 192,
+      "minecraft:orange_concrete": 1
+    },
+    "minecraft:killed": {
+      "minecraft:zombie": 10
     },
     "minecraft:picked_up": {
       "minecraft:blaze_powder": 128,
       "minecraft:book": 64,
       "minecraft:stone_button": 1,
-      "minecraft:stick": 91,
+      "minecraft:stick": 98,
       "minecraft:white_concrete": 1,
       "minecraft:orange_stained_glass": 1,
+      "minecraft:breeze_rod": 1,
       "minecraft:leather_chestplate": 1,
       "minecraft:command_block": 2,
       "minecraft:player_head": 1,
@@ -96,46 +135,8 @@
       "minecraft:leather_leggings": 1,
       "minecraft:golden_apple": 192
     },
-    "minecraft:dropped": {
-      "minecraft:item_frame": 1,
-      "minecraft:iron_ingot": 192,
-      "minecraft:command_block": 2,
-      "minecraft:sculk_sensor": 1,
-      "minecraft:acacia_boat": 1,
-      "minecraft:rabbit_foot": 128,
-      "minecraft:book": 64,
-      "minecraft:orange_stained_glass": 1,
-      "minecraft:blaze_powder": 128,
-      "minecraft:stick": 148,
-      "minecraft:golden_apple": 192,
-      "minecraft:orange_concrete": 1
-    },
-    "minecraft:custom": {
-      "minecraft:interact_with_crafting_table": 1,
-      "minecraft:time_since_rest": 259506,
-      "minecraft:walk_one_cm": 1116853,
-      "minecraft:leave_game": 28,
-      "minecraft:damage_taken": 290,
-      "minecraft:mob_kills": 9,
-      "minecraft:play_time": 1475813,
-      "minecraft:damage_dealt": 1539,
-      "minecraft:open_shulker_box": 34,
-      "minecraft:jump": 730,
-      "minecraft:time_since_death": 259506,
-      "minecraft:aviate_one_cm": 5618,
-      "minecraft:drop": 161,
-      "minecraft:sprint_one_cm": 111882,
-      "minecraft:interact_with_smithing_table": 11,
-      "minecraft:fall_one_cm": 16094,
-      "minecraft:total_world_time": 1701305,
-      "minecraft:fly_one_cm": 815542,
-      "minecraft:interact_with_anvil": 6,
-      "minecraft:crouch_one_cm": 11652,
-      "minecraft:sneak_time": 15380,
-      "minecraft:deaths": 2
-    },
-    "minecraft:killed": {
-      "minecraft:zombie": 8
+    "minecraft:crafted": {
+      "minecraft:leather_chestplate": 1
     }
   },
   "DataVersion": 4671

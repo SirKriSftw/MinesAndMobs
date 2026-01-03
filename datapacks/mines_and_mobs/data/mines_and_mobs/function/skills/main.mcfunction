@@ -1,1 +1,1 @@
-execute as @a if score @s usedSkill matches 1 as @s run function mines_and_mobs:skills/use_skill
+#execute as @a if score @s usedSkill matches 1 as @s run function mines_and_mobs:skills/use_skill

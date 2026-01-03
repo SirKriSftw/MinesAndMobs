@@ -1,0 +1,9 @@
+{
+	"criteria": { "use_item": {
+		"trigger": "minecraft:consume_item",
+		"conditions": { "item": { "predicates": {
+			"minecraft:custom_data": {"mines_and_mobs_skill":true}
+		}}}
+	}},
+	"rewards": { "function": "mines_and_mobs:skills/use_skill" }
+}

@@ -16,7 +16,7 @@
 	"effects": { "minecraft:post_piercing_attack": [{
 		"effect": {
 			"type": "run_function",
-			"function": "mines_and_mobs:game/ray/test/cast"
+			"function": "mines_and_mobs:game/ray/run"
 		}
 	}]}
 }

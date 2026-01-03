@@ -3,10 +3,17 @@
   "entity": "this",
   "predicate": {
     "distance": {
-      "horizontal": { "max": 0.6 },
+      "x": { 
+        "min": 0,
+        "max": 0.5 
+      },
       "y": {
         "min": 0,
         "max": 2.6
+      },
+      "z": { 
+        "min": 0,
+        "max": 0.5 
       }
     }
   }

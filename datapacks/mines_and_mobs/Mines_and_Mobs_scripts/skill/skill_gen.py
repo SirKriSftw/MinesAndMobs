@@ -4,7 +4,7 @@ import json
 def getGiveContent(data):
     # Prepare the components
     custom_name = f'custom_name="{data["name"]}"'
-    custom_data = f'minecraft:custom_data={{skill_id:{data["id"]}}}'
+    custom_data = f'minecraft:custom_data={{skill_id:{data["id"]}, mines_and_mobs_skill:true}}'
     
     consumable = (
         f'minecraft:consumable={{consume_seconds:{data["cast"]}f, '
@@ -17,21 +17,16 @@ def getGiveContent(data):
         f'cooldown_group:"{data["group"]}"}}'
     )
     
-    # The item you get back after using the skill
-    remainder = (
-        f'minecraft:use_remainder={{id:"minecraft:stick", count:1, '
-        f'components:{{"minecraft:custom_data":{{skill_id:{data["id"]}}}}}}}'
-    )
-
-    all_components = f"{custom_name}, {custom_data}, {consumable}, {cooldown}, {remainder}"
+    all_components = f"{custom_name}, {custom_data}, {consumable}, {cooldown}"
     
     clear_cmd = f"clear @s stick[minecraft:custom_data={{skill_id:{data['id']}}}]"
+    prevent_ghost_cmd = "item replace entity @s weapon.mainhand with stick"
     give_cmd = f"item replace entity @s weapon.mainhand with stick[{all_components}]"
     calc_cmd = "function mines_and_mobs:skills/calc_cooldown"
-    
-    return f"{clear_cmd}\n{give_cmd}\n{calc_cmd}"
 
-def getUseContent(data, path_name):
+    return f"{clear_cmd}\n{prevent_ghost_cmd}\n{give_cmd}\n{calc_cmd}"
+
+def getUseContent(path_name):
     # Logic path for effect and the re-give function
     effect_path = f"function mines_and_mobs:skills/effects/{path_name}/effect"
     give_path = f"function mines_and_mobs:skills/effects/{path_name}/give"
@@ -46,7 +41,7 @@ def generate_skill_files(data):
     # Generate content
     file_map = {
         "give.mcfunction": getGiveContent(data),
-        "use.mcfunction": getUseContent(data, path_name),
+        "use.mcfunction": getUseContent(path_name),
         "effect.mcfunction": "" # Intentionally blank as requested
     }
 
