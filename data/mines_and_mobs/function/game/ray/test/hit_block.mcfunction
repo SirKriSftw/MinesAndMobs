@@ -1,3 +1,1 @@
-say HIT BLOCK2
-
-scoreboard players add Test Test 1
+particle minecraft:smoke ~ ~ ~ 0.2 0.2 0.2 0.1 20

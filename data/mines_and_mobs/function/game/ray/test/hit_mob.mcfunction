@@ -1,1 +1,1 @@
-say HIT MOB
+damage @s 0 minecraft:magic
