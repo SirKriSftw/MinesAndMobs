@@ -1,2 +1,0 @@
-function mines_and_mobs:skills/effects/mega_jump/effect
-function mines_and_mobs:skills/effects/mega_jump/give

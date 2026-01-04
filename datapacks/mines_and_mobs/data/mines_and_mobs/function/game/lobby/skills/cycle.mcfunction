@@ -1,0 +1,1 @@
+execute if score _Timer Timer matches 0 if score #Is5 Seconds matches 0 run function mines_and_mobs:game/lobby/skills/next
