@@ -1,7 +1,0 @@
-item replace entity @s armor.chest with minecraft:leather_chestplate[minecraft:enchantment_glint_override=false, minecraft:enchantments={"minecraft:binding_curse": 1}, minecraft:tooltip_display={hidden_components:[enchantments]}, minecraft:unbreakable={}, minecraft:attribute_modifiers=[], minecraft:dyed_color=16351261, minecraft:custom_name=[{"text":"Monk's Shirt","italic":false,"color":"#FFAA00"}]]
-item replace entity @s armor.legs with minecraft:leather_leggings[minecraft:enchantment_glint_override=false, minecraft:enchantments={"minecraft:binding_curse": 1}, minecraft:tooltip_display={hidden_components:[enchantments]}, minecraft:unbreakable={}, minecraft:attribute_modifiers=[], minecraft:dyed_color=16351261, minecraft:custom_name=[{"text":"Monk's Pants","italic":false,"color":"#FFAA00"}]]
-item replace entity @s armor.feet with minecraft:leather_boots[minecraft:enchantment_glint_override=false, minecraft:enchantments={"minecraft:binding_curse": 1}, minecraft:tooltip_display={hidden_components:[enchantments]}, minecraft:unbreakable={}, minecraft:attribute_modifiers=[], minecraft:dyed_color=16351261, minecraft:custom_name=[{"text":"Monk's Shoes","italic":false,"color":"#FFAA00"}]]
-
-execute unless entity @s[tag=monk] run function mines_and_mobs:classes/monk/weapon
-function mines_and_mobs:classes/clear_tags
-tag @s add monk
