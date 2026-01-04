@@ -1,3 +1,6 @@
+advancement revoke @s from mines_and_mobs:stats/get_item
+execute if score _stopUpgrade GameStates matches 1 run return 0
+
 execute if items entity @s container.* blaze_powder \
  run function mines_and_mobs:stats/str/upgrade
 
@@ -15,5 +18,3 @@ execute if items entity @s container.* golden_apple \
 
 execute if items entity @s container.* emerald \
  run function mines_and_mobs:stats/cha/upgrade
-
-advancement revoke @s from mines_and_mobs:stats/get_item

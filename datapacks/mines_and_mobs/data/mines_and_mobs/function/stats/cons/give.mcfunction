@@ -1,6 +1,6 @@
-execute as @s run function mines_and_mobs:stats/_generic/give {\
+$execute as @s run function mines_and_mobs:stats/_generic/give {\
     item: "minecraft:iron_ingot",\
-    count: 1,\
+    count: $(count),\
     name: "Constitution",\
     color: "#FFA500"\
 }
