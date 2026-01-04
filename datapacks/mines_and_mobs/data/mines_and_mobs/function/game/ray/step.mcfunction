@@ -4,7 +4,7 @@ $execute as @s at @s run function $(on_travel)
 
 # Mob Detection-------------------------
 $execute at @s positioned ~ ~ ~ as @e[tag=enemy,distance=..2.5,tag=!hit] positioned ~ ~0.5 ~ if predicate mines_and_mobs:is_hit run function mines_and_mobs:game/ray/detection/mob {on_hit_mob:"$(on_hit_mob)"}
-execute if data entity @s {data:{hit_mob:1b, p_mobs:0b}} unless data entity @s {data: {chain:1}} run return 0
+execute if data entity @s {data:{hit_mob:1b, p_mobs:0b}} unless data entity @s {data: {chain:1}} run data modify entity @s data.range set value 0f
 execute if data entity @s {data:{hit_mob:1b, chain:1}} run function mines_and_mobs:game/ray/detection/chain
 
 data modify entity @s data.hit_mob set value 0b
@@ -16,7 +16,7 @@ execute at @s align z run execute store result score #z RayCast run data get ent
 
 $execute unless block ~ ~ ~ air run function mines_and_mobs:game/ray/detection/block {on_hit_block:"$(on_hit_block)"}
 execute if data entity @s {data:{bounce:1}} unless block ~ ~ ~ air run function mines_and_mobs:game/ray/detection/bounce
-execute if data entity @s {data:{hit_block:1b, p_blocks:0}} unless data entity @s {data:{bounce:1}} run return 0
+execute if data entity @s {data:{hit_block:1b, p_blocks:0}} unless data entity @s {data:{bounce:1}} run data modify entity @s data.range set value 0f
 
 # Range Calculation-------------------
 execute store result score @s RayCast run data get entity @s data.range
