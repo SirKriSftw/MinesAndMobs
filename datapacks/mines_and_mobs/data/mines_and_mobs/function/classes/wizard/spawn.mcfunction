@@ -1,1 +1,6 @@
-summon armor_stand ~ ~ ~ {equipment:{mainhand:{count:1, id:"minecraft:breeze_rod"}, legs:{components:{"minecraft:dyed_color":13061821},count:1, id:"minecraft:leather_leggings"}, chest:{components:{"minecraft:dyed_color":13061821},count:1, id:"minecraft:leather_chestplate"}, feet:{components:{"minecraft:dyed_color":13061821},count:1, id:"minecraft:leather_boots"}}, Tags:["Lobby", "Class"], CustomName:[{text:"Wizard", color:"#CC44CC"}], CustomNameVisible:1b, Invisible:1b, NoGravity:1b, ShowArms:1b, DisabledSlots:4144959}
+data modify storage mines_and_mobs:class class merge value {name: "wizard", display_name: "Wizard"}
+data modify storage mines_and_mobs:class class merge value {dyed_color: 13061821}
+data modify storage mines_and_mobs:class class merge value {hex_color: "#CC44CC"}
+data modify storage mines_and_mobs:class class merge value {weapon: "minecraft:breeze_rod"}
+
+function mines_and_mobs:classes/generic/summon with storage mines_and_mobs:class class
