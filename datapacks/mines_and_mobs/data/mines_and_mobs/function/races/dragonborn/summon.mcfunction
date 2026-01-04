@@ -1,6 +1,5 @@
 data modify storage mines_and_mobs:race args merge value {name: "dragonborn", display_name: "Dragonborn"}
 data modify storage mines_and_mobs:race args merge value {hex_color: "#FF00FF"}
-data modify storage mines_and_mobs:race args merge value {custom_component: 'minecraft:glider={}'}
 data modify storage mines_and_mobs:race args merge value { \
   profile: { \
     id:[I;2080793942, -524468218, -1541115779, 1949756395], \
@@ -11,4 +10,4 @@ data modify storage mines_and_mobs:race args merge value { \
   } \
 }
 
-function mines_and_mobs:races/_generic/assign
+function mines_and_mobs:races/_generic/summon

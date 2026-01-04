@@ -11,4 +11,4 @@ data modify storage mines_and_mobs:race args merge value { \
   } \
 }
 
-function mines_and_mobs:races/_generic/assign
+function mines_and_mobs:races/_generic/summon
