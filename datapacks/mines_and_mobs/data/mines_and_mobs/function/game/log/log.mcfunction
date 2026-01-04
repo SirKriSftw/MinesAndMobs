@@ -1,0 +1,1 @@
+$tellraw @a [{"text": "LOG [$(path)]: ", "color": "yellow"}, {"nbt": "$(path)", "entity": "@s", "color": "white"}]

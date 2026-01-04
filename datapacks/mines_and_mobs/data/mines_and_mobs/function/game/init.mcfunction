@@ -21,3 +21,6 @@ scoreboard objectives add Seconds dummy
 scoreboard objectives add isCrouching minecraft.custom:minecraft.sneak_time
 
 function mines_and_mobs:game/ray/helper/default
+
+# Global IDs for Rays
+execute unless data storage mines_and_mobs:ray_id next_id run data modify storage mines_and_mobs:ray_id next_id set value 1
