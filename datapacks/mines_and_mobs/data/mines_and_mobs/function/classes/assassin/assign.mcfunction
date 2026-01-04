@@ -2,4 +2,4 @@ data modify storage mines_and_mobs:class class merge value {name: "assassin", di
 data modify storage mines_and_mobs:class class merge value {dyed_color: 1908001}
 data modify storage mines_and_mobs:class class merge value {hex_color: "#666666"}
 
-execute as @s run function mines_and_mobs:classes/generic/assign with storage mines_and_mobs:class class
+execute as @s run function mines_and_mobs:classes/_generic/assign with storage mines_and_mobs:class class
