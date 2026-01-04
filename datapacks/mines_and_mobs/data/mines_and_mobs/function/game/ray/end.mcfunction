@@ -1,2 +1,2 @@
-$particle $(end_particle) ~ ~ ~ $(end_particle_data)
+$execute at @s as @s run function $(on_end)
 kill @s

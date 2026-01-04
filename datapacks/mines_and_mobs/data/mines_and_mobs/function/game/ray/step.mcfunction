@@ -1,6 +1,6 @@
 # Move Forward-------------------------
 $tp @s ^ ^ ^$(speed)
-$particle $(particle) ~ ~ ~ $(particle_data)
+$execute as @s at @s run function $(on_travel)
 
 # Mob Detection-------------------------
 $execute at @s positioned ~ ~ ~ as @e[tag=enemy,distance=..2.5,tag=!hit] positioned ~ ~0.5 ~ if predicate mines_and_mobs:is_hit run function mines_and_mobs:game/ray/detection/mob {on_hit_mob:"$(on_hit_mob)"}
@@ -27,4 +27,4 @@ execute store result entity @s data.range int 1 run scoreboard players get @s Ra
 execute if entity @s[tag=slow_cast] run return 0
 
 # Recursion-------------------------
-$execute if score @s RayCast matches 1.. as @s at @s run function mines_and_mobs:game/ray/step {speed:$(speed), particle:"$(particle)", particle_data:"$(particle_data)", on_hit_mob:"$(on_hit_mob)", on_hit_block:"$(on_hit_block)"}
+$execute if score @s RayCast matches 1.. as @s at @s run function mines_and_mobs:game/ray/step {speed:$(speed), on_travel:"$(on_travel)", on_hit_mob:"$(on_hit_mob)", on_hit_block:"$(on_hit_block)", on_end:"$(on_end)"}

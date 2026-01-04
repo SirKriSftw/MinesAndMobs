@@ -9,6 +9,6 @@ scoreboard players operation #1000000 Math *= .range_factor Math
 execute store result storage mines_and_mobs:ray use.range float 1 run scoreboard players get #1000000 Math
 
 # Clean up
-#scoreboard players reset .speed_factor Math
-#scoreboard players reset .range_factor Math
+scoreboard players reset .speed_factor Math
+scoreboard players reset .range_factor Math
 scoreboard players set #1000000 Math 1000000
