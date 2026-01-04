@@ -1,8 +1,9 @@
-clear @s iron_ingot 1
-
-scoreboard players add @s con 1
-
-function mines_and_mobs:stats/update
-
-title @s actionbar {"text":"Weapon Upgraded!","color":"gold"}
-playsound minecraft:block.enchantment_table.use player @a ~ ~ ~ 1 1.2
+function mines_and_mobs:stats/_generic/upgrade \
+  {\
+    "item": "minecraft:iron_ingot",\
+    "stat": "cons",\
+    "name": "Constitution",\
+    "update_fn": "mines_and_mobs:stats/_logic/upgrade/con_wis", \
+    "color": "#FFA500",\
+    "sound": "minecraft:block.enchantment_table.use"\
+ }

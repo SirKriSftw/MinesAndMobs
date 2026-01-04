@@ -10,7 +10,7 @@ $data modify entity @s data merge value {range:$(range), speed:$(speed), p_mobs:
 tag @s remove ray_new
 
 # Start Recursion for hit_scan
-execute as @s[tag=hit_scan] at @s run function mines_and_mobs:game/ray/step with entity @s data
+execute as @s[tag=hit_scan] at @s run function mines_and_mobs:ray/_logic/step with entity @s data
 
 # End hit_scan
-execute as @s[tag=hit_scan] at @s run function mines_and_mobs:game/ray/end with entity @s data
+execute as @s[tag=hit_scan] at @s run function mines_and_mobs:ray/_logic/end with entity @s data

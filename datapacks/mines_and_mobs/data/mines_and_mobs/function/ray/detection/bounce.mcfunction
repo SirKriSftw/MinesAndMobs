@@ -20,7 +20,7 @@ execute if block ~ ~ ~-0.1 air run scoreboard players set #axis RayCast 3
 # If hitting X or Z (Sides): Mirror the Yaw
 # Logic: NewYaw = OldYaw * -1.0
 execute if score #axis RayCast matches 1 run execute store result entity @s Rotation[0] float -1 run data get entity @s Rotation[0]
-execute if score #axis RayCast matches 3 run execute store result entity @s Rotation[0] float -1 run function mines_and_mobs:game/ray/helper/z_bounce
+execute if score #axis RayCast matches 3 run execute store result entity @s Rotation[0] float -1 run function mines_and_mobs:ray/helper/z_bounce
 
 # If hitting Y (Floor/Ceiling): Mirror the Pitch
 # Logic: NewPitch = OldPitch * -1.0

@@ -4,4 +4,4 @@ data modify storage mines_and_mobs:give args merge value {on_hit_mob:"mines_and_
 data modify storage mines_and_mobs:give args merge value {on_hit_block:"mines_and_mobs:spells/smite/on/hit"}
 data modify storage mines_and_mobs:give args merge value {on_end:"mines_and_mobs:spells/smite/on/hit"}
 
-execute as @s run function mines_and_mobs:game/ray/give/wand
+execute as @s run function mines_and_mobs:ray/give/wand

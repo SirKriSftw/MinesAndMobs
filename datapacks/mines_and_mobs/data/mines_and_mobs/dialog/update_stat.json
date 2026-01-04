@@ -1,0 +1,66 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Update Stat",
+  "actions": [
+    {
+      "label": {
+        "text": "+1 Strength",
+        "color": "#FF0000"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/trigger give_stat set 1"
+      }
+    }
+    , {
+      "label": {
+        "text": "+1 Dexterity",
+        "color": "#00FF00"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/trigger give_stat set 2"
+      }
+    }
+    , {
+      "label": {
+        "text": "+1 Constitution",
+        "color": "#FFA500"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/trigger give_stat set 3"
+      }
+    }
+    , {
+      "label": {
+        "text": "+1 Intelligence",
+        "color": "#3333CC"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/trigger give_stat set 4"
+      }
+    }
+    , {
+      "label": {
+        "text": "+1 Wisdom",
+        "color": "#800080"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/trigger give_stat set 5"
+      }
+    }
+    , {
+      "label": {
+        "text": "+1 Charisma",
+        "color": "#FF6678"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/trigger give_stat set 6"
+      }
+    }
+  ]
+}

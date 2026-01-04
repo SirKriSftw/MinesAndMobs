@@ -7,3 +7,5 @@ scoreboard objectives add cha dummy Charisma
 
 scoreboard objectives add selectedStat dummy "Selected Stat"
 scoreboard players set #Current selectedStat 1
+
+scoreboard objectives add give_stat trigger "Give Stat"

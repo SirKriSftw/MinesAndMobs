@@ -1,6 +1,9 @@
-clear @s emerald 1
-
-scoreboard players add @s cha 1
-
-title @s actionbar {"text":"Weapon Upgraded!","color":"gold"}
-playsound minecraft:block.enchantment_table.use player @a ~ ~ ~ 1 1.2
+function mines_and_mobs:stats/_generic/upgrade \
+  {\
+    "item": "minecraft:emerald",\
+    "stat": "cha",\
+    "name": "Charisma",\
+    "update_fn": "mines_and_mobs:not_found", \
+    "color": "#FF6678",\
+    "sound": "minecraft:block.enchantment_table.use"\
+ }
