@@ -1,5 +1,9 @@
+scoreboard objectives add Math dummy
 scoreboard objectives add Constants dummy
+scoreboard players set #100000 Constants 100000
+scoreboard players set #1000 Constants 1000
 scoreboard players set #100 Constants 100
+scoreboard players set #20 Constants 20
 scoreboard players set #10 Constants 10
 scoreboard players set #5 Constants 5
 scoreboard players set #2 Constants 2
@@ -16,4 +20,4 @@ scoreboard objectives add Seconds dummy
 
 scoreboard objectives add isCrouching minecraft.custom:minecraft.sneak_time
 
-function mines_and_mobs:game/ray/default
+function mines_and_mobs:game/ray/helper/default

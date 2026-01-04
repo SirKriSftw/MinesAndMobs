@@ -1,5 +1,5 @@
 # Move Forward-------------------------
-tp @s ^ ^ ^0.1
+$tp @s ^ ^ ^$(speed)
 $particle $(particle) ~ ~ ~ $(particle_data)
 
 # Mob Detection-------------------------

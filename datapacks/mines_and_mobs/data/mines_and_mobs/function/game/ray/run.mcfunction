@@ -4,12 +4,15 @@ data remove storage mines_and_mobs:ray use
 # Set Default Values ----
 data modify storage mines_and_mobs:ray use set from storage mines_and_mobs:default use
 
-execute store result storage mines_and_mobs:ray use.speed float 1 run data get entity @s SelectedItem.components."minecraft:custom_data".speed
+execute store result storage mines_and_mobs:ray use.is_hitscan byte 1 run data get entity @s SelectedItem.components."minecraft:custom_data".is_hitscan
+# Convert 1 speed into 1 block per tick (20 ticks per second 0.05 -> 1/20)
+execute store result storage mines_and_mobs:ray use.speed float 0.05 run data get entity @s SelectedItem.components."minecraft:custom_data".speed
 
-execute store result storage mines_and_mobs:ray use.range float 10 run data get entity @s SelectedItem.components."minecraft:custom_data".range
+execute store result storage mines_and_mobs:ray use.range float 1 run data get entity @s SelectedItem.components."minecraft:custom_data".range
+function mines_and_mobs:game/ray/helper/cal_range with storage mines_and_mobs:ray use 
 
-execute unless data storage mines_and_mobs:ray {use:{speed:0.0f}} run data modify storage mines_and_mobs:ray use.tag set value "slow_cast"
-execute if data storage mines_and_mobs:ray {use:{speed:0.0f}} run data modify storage mines_and_mobs:ray use.tag set value "hit_scan"
+execute unless data storage mines_and_mobs:ray {use:{is_hitscan:0}} run data modify storage mines_and_mobs:ray use.tag set value "slow_cast"
+execute if data storage mines_and_mobs:ray {use:{is_hitscan:1b}} run data modify storage mines_and_mobs:ray use.tag set value "hit_scan"
 
 execute if data storage mines_and_mobs:ray {use:{speed:0.0f}} run data modify storage mines_and_mobs:ray use.speed set value 0.1f
 
