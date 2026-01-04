@@ -215,6 +215,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/redstone": {
+    "criteria": {
+      "has_redstone_block": "2026-01-03 16:23:58 -0500"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/redstone_torch": {
     "criteria": {
       "has_redstone": "2026-01-03 16:34:49 -0500"
@@ -224,12 +230,6 @@
   "minecraft:recipes/tools/clock": {
     "criteria": {
       "has_redstone": "2026-01-03 16:34:49 -0500"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/redstone": {
-    "criteria": {
-      "has_redstone_block": "2026-01-03 16:23:58 -0500"
     },
     "done": true
   },
@@ -266,6 +266,18 @@
   "minecraft:recipes/redstone/piston": {
     "criteria": {
       "has_redstone": "2026-01-03 16:34:49 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_nugget_from_smelting": {
+    "criteria": {
+      "has_golden_spear": "2026-01-03 16:52:31 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_nugget_from_blasting": {
+    "criteria": {
+      "has_golden_spear": "2026-01-03 16:52:31 -0500"
     },
     "done": true
   },

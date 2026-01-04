@@ -1,9 +1,16 @@
 # Summon the ray worker
-execute at @s rotated as @s anchored eyes run summon marker ~ ~ ~ {Tags: ["ray_worker"]}
-execute as @e[tag=ray_worker,limit=1,distance=..1] rotated as @p run tp @s ~ ~ ~ ~ ~
+$summon marker ~ ~ ~ {Tags: ["$(tag)", "ray_worker", "ray_new"]}
+execute as @e[tag=ray_new,limit=1,distance=..1] anchored eyes positioned ^ ^ ^ run tp @s ~ ~ ~ ~ ~
 
-# Initialize its data from the macro call
-$data modify entity @e[tag=ray_worker,limit=1,distance=..1] data set value {range:$(range), p_mobs:$(p_mobs), p_blocks:$(p_blocks), bounce:$(bounce), chain:$(chain), speed:$(speed), hit_mob:0b, hit_block: 0b}
+# Set entity data
+#execute as @e[tag=ray_worker,limit=1,distance=..1] at @p anchored eyes rotated as @p run tp @s ^ ^ ^
+$data modify entity @e[tag=ray_new,limit=1,distance=..1] data set value {range:$(range), speed:$(speed), p_mobs:$(p_mobs), p_blocks:$(p_blocks), bounce:$(bounce), chain:$(chain), particle:"$(particle)", particle_data:"$(particle_data)", end_particle:"$(end_particle)", end_particle_data:"$(end_particle_data)",on_hit_mob:"$(on_hit_mob)", on_hit_block:"$(on_hit_block)", hit_mob:0b, hit_block: 0b}
 
-# Start the recursion as the marker
-$execute as @e[tag=ray_worker,limit=1,distance=..1] at @s positioned ~ ~1.5 ~ run function mines_and_mobs:game/ray/step {particle:"$(particle)", particle_data:"$(particle_data)", end_particle:"$(end_particle)", end_particle_data:"$(end_particle_data)", on_hit_mob:"$(on_hit_mob)", on_hit_block:"$(on_hit_block)"}
+# Remove the new tag
+tag @e[tag=ray_new,limit=1,distance=..1] remove ray_new
+
+# Start Recursion for hit_scan
+execute as @e[tag=hit_scan,limit=1,distance=..1] at @s run function mines_and_mobs:game/ray/step with entity @s data
+
+# End hit_scan
+execute as @e[tag=hit_scan,limit=1] at @s run function mines_and_mobs:game/ray/end with entity @s data
