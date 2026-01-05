@@ -4,7 +4,7 @@ $execute as @s at @s run function $(on_travel)
 
 # Mob Detection-------------------------
 $execute at @s positioned ~ ~ ~ as @e[tag=enemy,distance=..2.5,tag=!hit] positioned ~ ~0.5 ~ if predicate mines_and_mobs:is_hit run function mines_and_mobs:ray/detection/mob {ray_id: $(ray_id), on_hit_mob:"$(on_hit_mob)"}
-execute if data entity @s {data:{hit_mob:1b, p_mobs:0b}} unless data entity @s {data: {chain:1}} run data modify entity @s data.range set value 0f
+execute if data entity @s {data:{hit_mob:1b, p_mobs:0}} unless data entity @s {data: {chain:1}} run data modify entity @s data.range set value 0f
 execute if data entity @s {data:{hit_mob:1b, chain:1}} run function mines_and_mobs:ray/detection/chain with entity @s data
 
 data modify entity @s data.hit_mob set value 0b

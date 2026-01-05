@@ -1,2 +1,5 @@
-clear @p *[minecraft:custom_data={mines_and_mobs_weapon:1b}]
-item replace entity @s weapon.mainhand with minecraft:stone_sword[minecraft:custom_name={text:"Dagger", color:"#666666", italic:false}, custom_data={mines_and_mobs_weapon:1b}, attribute_modifiers=[]]
+function mines_and_mobs:classes/_generic/weapon {\
+    item: "minecraft:stone_sword", \
+    name: "Dagger", \
+    color: "#666666" \
+}

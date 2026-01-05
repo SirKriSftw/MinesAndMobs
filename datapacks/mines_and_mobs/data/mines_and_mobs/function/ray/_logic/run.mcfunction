@@ -2,7 +2,7 @@
 data remove storage mines_and_mobs:ray use
 
 # Set Default Values ----
-data modify storage mines_and_mobs:ray use set from storage mines_and_mobs:default use
+data modify storage mines_and_mobs:ray use set from storage mines_and_mobs:default spell
 
 execute store result storage mines_and_mobs:ray use.is_hitscan byte 1 run data get entity @s SelectedItem.components."minecraft:custom_data".is_hitscan
 # Convert 1 speed into 1 block per tick (20 ticks per second 0.05 -> 1/20)

@@ -5,5 +5,5 @@ data merge storage mines_and_mobs:default {skill: {animation: "bow"}}
 data merge storage mines_and_mobs:default {skill: {sound: "minecraft:block.candle.extinguish"}}
 data merge storage mines_and_mobs:default {skill: {group: "generic"}}
 
-data merge storage mines_and_mobs:default {skill: {give: "mines_and_mobs:skills/generic/give"}}
-data merge storage mines_and_mobs:default {skill: {on_effect: "mines_and_mobs:skills/generic/on_effect"}}
+data merge storage mines_and_mobs:default {skill: {give: "mines_and_mobs:skills/_generic/give"}}
+data merge storage mines_and_mobs:default {skill: {on_effect: "mines_and_mobs:skills/_generic/on_effect"}}

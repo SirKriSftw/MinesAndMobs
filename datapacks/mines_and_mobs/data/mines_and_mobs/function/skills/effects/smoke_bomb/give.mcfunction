@@ -8,4 +8,4 @@ data modify storage mines_and_mobs:give skill_args merge value {group: "smoke"}
 data modify storage mines_and_mobs:give skill_args merge value {give: "mines_and_mobs:skills/effects/smoke_bomb/effect"}
 data modify storage mines_and_mobs:give skill_args merge value {on_effect: "mines_and_mobs:skills/effects/smoke_bomb/give"}
 
-execute as @s run function mines_and_mobs:skills/generic/give
+execute as @s run function mines_and_mobs:skills/_generic/give

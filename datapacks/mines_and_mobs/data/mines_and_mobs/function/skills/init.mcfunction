@@ -6,4 +6,4 @@ scoreboard objectives add cooldownPercentage dummy
 
 scoreboard players set #Current selectedSkill 1
 
-function mines_and_mobs:skills/generic/default
+function mines_and_mobs:skills/_generic/default

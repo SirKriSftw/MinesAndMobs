@@ -1,2 +1,5 @@
 clear @p *[minecraft:custom_data={mines_and_mobs_weapon:1b}]
-item replace entity @s weapon.mainhand with minecraft:breeze_rod[minecraft:custom_name={text:"Wand", color:"#CC44CC", italic:false}, custom_data={mines_and_mobs_weapon:1b}, attribute_modifiers=[],minecraft:piercing_weapon={min_reach:0, max_reach: 0, hitbox_margin: 0}, enchantments={"mines_and_mobs:wand":1}]
+data modify storage mines_and_mobs:give spell_args merge value {name:"Light Ray", color:"#FFFFFF"}
+data modify storage mines_and_mobs:give spell_args merge value {range: 20.0f, speed: 4.0f, is_hitscan:0b}
+
+execute as @p run function mines_and_mobs:spells/_give/spell
