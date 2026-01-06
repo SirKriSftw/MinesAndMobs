@@ -4,6 +4,8 @@ scoreboard players set #100000 Constants 100000
 scoreboard players set #1000 Constants 1000
 scoreboard players set #100 Constants 100
 scoreboard players set #20 Constants 20
+scoreboard players set #16 Constants 16
+scoreboard players set #15 Constants 15
 scoreboard players set #10 Constants 10
 scoreboard players set #5 Constants 5
 scoreboard players set #2 Constants 2
