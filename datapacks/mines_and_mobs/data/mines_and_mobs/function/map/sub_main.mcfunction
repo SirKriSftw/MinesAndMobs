@@ -1,0 +1,2 @@
+execute as @e[tag=new_map_marker, tag=map_chunk, limit=5, sort=nearest] at @s run function mines_and_mobs:map/gen/chunk
+execute as @e[tag=clear_marker, tag=map_chunk, limit=5, sort=nearest] at @s run function mines_and_mobs:map/gen/clear

@@ -1,6 +1,9 @@
 execute store result score #IsEven Seconds run scoreboard players get _Seconds Seconds
 scoreboard players operation #IsEven Seconds %= #2 Constants
 
+execute store result score #IsEven Timer run scoreboard players get _Timer Timer
+scoreboard players operation #IsEven Timer %= #2 Constants
+
 execute store result score #Is10 Seconds run scoreboard players get _Seconds Seconds
 scoreboard players operation #Is10 Seconds %= #10 Constants
 

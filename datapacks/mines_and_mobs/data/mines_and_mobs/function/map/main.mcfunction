@@ -1,0 +1,1 @@
+execute if score #IsEven Timer matches 1 run function mines_and_mobs:map/sub_main
