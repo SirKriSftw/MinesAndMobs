@@ -1,0 +1,1 @@
+function mines_and_mobs:spells/_give/spell
