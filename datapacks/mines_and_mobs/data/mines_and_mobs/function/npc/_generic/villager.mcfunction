@@ -1,19 +1,11 @@
-$summon villager ~ ~ ~ {\
-  Silent: 1,\ 
-  Invulnerable: 1b,\
-  Tags: ["mnm_npc", "mnm_vil"],\
-  Team: mnm_npcs,\
-  Offers:{Recipes:$(trades)},\
-  attributes:[\
-    {id:"scale", base: 1.1f}\
-  ],\
-  active_effects:[\
-    {id:invisibility,duration:-1,amplifier:1,show_particles:0b},\
-    {id:glowing,duration:-1,amplifier:1,show_particles:0b}\
-  ],\
-  VillagerData:{\
-    level: 5,\
-    profession: armorer,\
-    type: taiga\
-  }\
-}
+data remove storage mines_and_mobs:npc args
+data modify storage mines_and_mobs:npc args set from storage mines_and_mobs:default vil
+
+data modify storage mines_and_mobs:npc vil.pos insert 0 from entity @p Pos[0]
+data modify storage mines_and_mobs:npc vil.pos insert 1 from entity @p Pos[1]
+data modify storage mines_and_mobs:npc vil.pos insert 2 from entity @p Pos[2]
+
+data modify storage mines_and_mobs:npc args merge from storage mines_and_mobs:npc vil
+
+function mines_and_mobs:npc/_generic/do_villager with storage mines_and_mobs:npc args
+data remove storage mines_and_mobs:npc args
