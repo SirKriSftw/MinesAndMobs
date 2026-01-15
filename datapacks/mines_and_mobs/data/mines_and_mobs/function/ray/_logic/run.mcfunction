@@ -25,3 +25,5 @@ data modify storage mines_and_mobs:ray use.on_hit_block set from entity @s Selec
 data modify storage mines_and_mobs:ray use.on_end set from entity @s SelectedItem.components."minecraft:custom_data".on_end
 
 execute anchored eyes at @s positioned ^ ^ ^ run function mines_and_mobs:ray/_logic/cast with storage mines_and_mobs:ray use
+
+data remove storage mines_and_mobs:ray use

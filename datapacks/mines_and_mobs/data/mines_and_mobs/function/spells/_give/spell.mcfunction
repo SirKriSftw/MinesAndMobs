@@ -11,4 +11,7 @@ scoreboard players reset #is_hitscan Math
 function mines_and_mobs:spells/_give/gen_lore with storage mines_and_mobs:give data
 
 function mines_and_mobs:spells/_give/apply with storage mines_and_mobs:give data
+
+# Clean up
 data remove storage mines_and_mobs:give spell_args
+data remove storage mines_and_mobs:give data

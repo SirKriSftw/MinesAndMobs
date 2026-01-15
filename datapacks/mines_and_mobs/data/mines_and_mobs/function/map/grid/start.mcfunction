@@ -10,3 +10,5 @@ kill @e[tag=map_chunk]
 $function mines_and_mobs:map/grid/step {x:$(x), y:$(y), z:$(z), y2:$(y2), rows:$(rows), cols:$(cols), is_clear: $(is_clear), curr_row:0, curr_col:0}
 
 # Reset anything after here
+data remove storage mines_and_mobs:math cord
+data remove storage mines_and_mobs:math step

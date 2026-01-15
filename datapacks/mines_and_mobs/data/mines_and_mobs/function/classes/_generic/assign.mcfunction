@@ -35,3 +35,5 @@ $item replace entity @s armor.feet with minecraft:leather_boots[ \
 $execute unless entity @s[tag=$(name)] run function mines_and_mobs:classes/$(name)/weapon
 function mines_and_mobs:classes/clear_tags
 $tag @s add $(name)
+
+data remove storage mines_and_mobs:class class

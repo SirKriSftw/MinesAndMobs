@@ -6,3 +6,4 @@ function mines_and_mobs:skills/_generic/apply_data with storage mines_and_mobs:g
 data remove storage mines_and_mobs:give skill_args
 
 function mines_and_mobs:skills/calc_cooldown
+data remove storage mines_and_mobs:give skill
