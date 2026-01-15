@@ -5,5 +5,7 @@ function mines_and_mobs:npc/blacksmith/trades
 
 function mines_and_mobs:npc/_generic/summon {\
   name: "blacksmith",\
+  display_name: "Bram Blackiron",\
+  description: "Blacksmith 🔨",\
   texture:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzFhZjA4OGJiNTM4ZjljZTdlM2M5YWM2ODQ5NjcwODcxNjNmMDk2ZWU1YzFiNDIzYTUyMTQ2YTZiM2JkZDI3MDAifX19"\
 }

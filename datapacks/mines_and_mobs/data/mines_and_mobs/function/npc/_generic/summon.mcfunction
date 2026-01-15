@@ -1,5 +1,8 @@
 $summon minecraft:mannequin ~ ~ ~ \
 {\
+  CustomName: "$(display_name)",\
+  description: "$(description)",\
+  CustomNameVisible: 1b,\
   Tags:["mnm_npc", "mnm_man", "$(name)"],\
   profile:{\
     properties:[\
