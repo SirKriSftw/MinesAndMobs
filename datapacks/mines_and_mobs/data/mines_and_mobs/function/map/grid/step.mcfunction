@@ -66,7 +66,6 @@ $execute if score _c_cols Math matches $(cols) run scoreboard players set _is_ed
 function mines_and_mobs:map/grid/summon with storage mines_and_mobs:math cord
 
 # Check for end of fn
-$execute if score _c_rows Math matches $(rows) if score _c_cols Math matches $(cols) run say returning
 $execute if score _c_rows Math matches $(rows) if score _c_cols Math matches $(cols) run return 0
 
 # Check for next col

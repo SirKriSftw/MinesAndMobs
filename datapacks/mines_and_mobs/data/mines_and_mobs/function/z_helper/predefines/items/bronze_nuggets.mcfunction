@@ -1,0 +1,1 @@
+give @p copper_nugget[custom_name={"text":"Bronze Nugget","italic":false,"color":"#CE8946"}] 10
