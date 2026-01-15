@@ -1,4 +1,5 @@
 $summon villager ~ ~ ~ {\
+  data:{npc_id: $(npc_id)},\
   CustomName:"$(display_name)",\
   Silent: 1,\ 
   Invulnerable: 1b,\

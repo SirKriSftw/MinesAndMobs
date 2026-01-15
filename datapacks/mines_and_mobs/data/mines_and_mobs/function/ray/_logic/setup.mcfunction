@@ -1,7 +1,7 @@
 # Assign an ID
-execute store result entity @s data.ray_id int 1 run data get storage mines_and_mobs:ray_id next_id
+execute store result entity @s data.ray_id int 1 run data get storage mines_and_mobs:global ray_id
 
-execute store result storage mines_and_mobs:ray_id next_id int 1 run scoreboard players add #ray_id_counter RayCast 1
+execute store result storage mines_and_mobs:global ray_id int 1 run scoreboard players add #ray_id_counter RayCast 1
 
 # Set entity data
 $data modify entity @s data merge value {range:$(range), speed:$(speed), p_mobs:$(p_mobs), p_blocks:$(p_blocks), bounce:$(bounce), chain:$(chain), on_travel:"$(on_travel)", on_hit_mob:"$(on_hit_mob)", on_hit_block:"$(on_hit_block)", on_end: "$(on_end)", hit_mob:0b, hit_block: 0b}
