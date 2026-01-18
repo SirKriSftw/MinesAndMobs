@@ -6,11 +6,15 @@ $item replace entity @s weapon.mainhand with $(item)[ \
     mines_and_mobs_weapon:1b, \
     range:$(range), \
     speed:$(speed), \
+    weight:$(weight), \
     is_hitscan:$(is_hitscan), \
     p_mobs:$(p_mobs), \
     p_blocks:$(p_blocks), \
     bounce:$(bounce), \
     chain:$(chain), \
+    lock_on:$(lock_on), \
+    on_cast_player:'$(on_cast_player)', \
+    on_cast_ray:'$(on_cast_ray)', \
     on_hit_mob:'$(on_hit_mob)', \
     on_hit_block:'$(on_hit_block)', \
     on_travel:'$(on_travel)', \

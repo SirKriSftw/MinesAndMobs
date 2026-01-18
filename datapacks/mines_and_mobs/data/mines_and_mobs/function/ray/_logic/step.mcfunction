@@ -1,4 +1,7 @@
 # Move Forward-------------------------
+execute if data entity @s {data:{lock_on:1}} run function mines_and_mobs:ray/detection/lock_on with entity @s data
+
+$tp @s ~ ~ ~ ~ ~$(weight)
 $tp @s ^ ^ ^$(speed)
 $execute as @s at @s run function $(on_travel)
 

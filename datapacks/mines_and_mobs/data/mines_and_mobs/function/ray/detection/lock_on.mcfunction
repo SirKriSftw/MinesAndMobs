@@ -1,0 +1,1 @@
+$execute at @s facing entity @e[tag=enemy, tag=!hit, distance=..25, nbt=!{data:{hit_by:[$(ray_id)]}}, limit=1, sort=nearest] eyes run tp @s ~ ~ ~ ~ ~
