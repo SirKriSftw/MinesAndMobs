@@ -8,7 +8,9 @@ $item replace entity @s weapon.mainhand with stick[ \
     mines_and_mobs_skill:true, \
     skill_id:$(id), \
     give:"$(give)", \
-    on_effect:"$(on_effect)" \
+    on_effect:"$(on_effect)", \
+    cast:$(cast), \
+    cooldown:$(cooldown), \
   }, \
   minecraft:consumable={ \
     consume_seconds:$(cast), \
