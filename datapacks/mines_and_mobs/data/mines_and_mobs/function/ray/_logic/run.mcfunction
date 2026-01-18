@@ -19,6 +19,7 @@ execute store result storage mines_and_mobs:ray use.weight double 0.1 run data g
 # Turn radius + Lock On Delay ----------
 execute store result storage mines_and_mobs:ray use.turn_radius double 1000 run data get entity @s SelectedItem.components."minecraft:custom_data".turn_radius
 execute store result storage mines_and_mobs:ray use.lock_delay int 1 run data get entity @s SelectedItem.components."minecraft:custom_data".lock_delay
+execute store result storage mines_and_mobs:ray use.lock_dist float 1 run data get entity @s SelectedItem.components."minecraft:custom_data".lock_dist
 
 # Set Damage ----
 execute store result storage mines_and_mobs:ray use.damage float 1 run scoreboard players get @s str

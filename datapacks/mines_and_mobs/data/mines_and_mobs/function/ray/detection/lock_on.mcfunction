@@ -5,7 +5,7 @@ execute store result score #ray_rot_1 Math run data get entity @s Rotation[1] 10
 # Store TARGET rotation values
 execute at @s run summon marker ~ ~ ~ {Tags:["ray_target"]}
 $execute as @e[tag=ray_target,limit=1, sort=nearest] at @s \
-  facing entity @e[tag=enemy, distance=..25, nbt=!{data:{hit_by:[$(ray_id)]}}, limit=1, sort=nearest] eyes \
+  facing entity @e[tag=enemy, distance=..$(lock_dist), nbt=!{data:{hit_by:[$(ray_id)]}}, limit=1, sort=nearest] eyes \
   run tp @s ~ ~ ~ ~ ~
 
 execute store result score #target_rot_0 Math run data get entity @e[tag=ray_target,limit=1, sort=nearest] Rotation[0] 1000

@@ -14,6 +14,7 @@ $item replace entity @s weapon.mainhand with $(item)[ \
     chain:$(chain), \
     lock_on:$(lock_on), \
     lock_delay:$(lock_delay), \
+    lock_dist:$(lock_dist), \
     turn_radius:$(turn_radius), \
     on_cast_player:'$(on_cast_player)', \
     on_cast_ray:'$(on_cast_ray)', \
