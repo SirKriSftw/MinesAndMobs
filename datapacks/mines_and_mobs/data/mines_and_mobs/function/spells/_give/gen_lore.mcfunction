@@ -11,7 +11,12 @@ execute if score #pierce_blocks Math matches 1 run data modify storage mines_and
 execute if score #bounce Math matches 1 run data modify storage mines_and_mobs:spell lore append value {"text": "Bounce", "color":"red", "italic": false}
 execute if score #chain Math matches 1 run data modify storage mines_and_mobs:spell lore append value {"text": "Chain", "color":"aqua", "italic": false}
 execute if score #lock_on Math matches 1 run data modify storage mines_and_mobs:spell lore append value {"text": "Lock On", "color":"dark_green", "italic": false}
-$data modify storage mines_and_mobs:spell lore append value {"text": "Range $(range) | Speed $(speed) | Weight $(weight)", "color":"white", "italic": false, "underlined":true}
+
+data modify storage mines_and_mobs:spell lore append value {"text": "", "color":"gray", "italic": false, "underlined":true}
+data modify storage mines_and_mobs:spell lore append value {"text": "Stats                  ", "color":"gray", "italic": false, "underlined":true}
+$data modify storage mines_and_mobs:spell lore append value {"text": "Range $(range)", "color":"gray", "italic": false, "underlined":false}
+$data modify storage mines_and_mobs:spell lore append value {"text": "Speed $(speed)", "color":"gray", "italic": false, "underlined":false}
+$data modify storage mines_and_mobs:spell lore append value {"text": "Weight $(weight)", "color":"gray", "italic": false, "underlined":false}
 
 # Save Lore to Storage ---
 data modify storage mines_and_mobs:give data.lore set from storage mines_and_mobs:spell lore
