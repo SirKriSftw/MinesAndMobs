@@ -1,4 +1,4 @@
-$item replace entity @s armor.head with minecraft:player_head[ \
+$item replace entity @s armor.head with $(item)[ \
   minecraft:custom_name=[{"text":"$(display_name)","italic":false,"color":"$(hex_color)"}], \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={"minecraft:binding_curse": 1}, \

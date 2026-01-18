@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "shot_weapon": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "delta": -1,
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "mines_and_mobs:uses_arrows"
+          }
+        ],
+        "item": {
+          "items": [
+            "minecraft:bow",
+            "minecraft:crossbow"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mines_and_mobs:stats/_reload/start"
+  }
+}

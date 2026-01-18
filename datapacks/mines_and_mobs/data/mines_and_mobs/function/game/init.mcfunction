@@ -12,6 +12,13 @@ scoreboard players set #2 Constants 2
 scoreboard players set #1 Constants 1
 
 scoreboard objectives add GameStates dummy "Game States"
+# States Enum ------
+# 0) In Lobby
+# 1) Starting
+# 2) In Town
+# 3) In Dungeon
+# 4) Resetting
+scoreboard objectives add GameOptions dummy "Game Options"
 
 scoreboard objectives add RayCast dummy "Ray Cast"
 scoreboard objectives add last_x dummy

@@ -1,7 +1,7 @@
-execute unless score IsStarting GameStates matches 1 run function mines_and_mobs:game/timer/reset
+execute unless score _state GameStates matches 1 run function mines_and_mobs:game/timer/reset
 execute at @s run particle minecraft:portal ~ ~ ~ 0.2 0 0.2 0 20
 
-scoreboard players set IsStarting GameStates 1
+scoreboard players set _state GameStates 1
 
 title @a times 0s 0.5s 0.5s
 execute if score _Timer Timer matches 2 if score _Seconds Seconds matches 0 run title @a title "10..."

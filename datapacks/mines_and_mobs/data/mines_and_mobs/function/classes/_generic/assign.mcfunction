@@ -1,5 +1,8 @@
+data remove storage mines_and_mobs:class class
+$execute if entity @s[tag=$(name)] run return 0
+
 # Chestplate
-$item replace entity @s armor.chest with minecraft:leather_chestplate[ \
+$execute unless score _showSkin GameOptions matches 1 run item replace entity @s armor.chest with minecraft:leather_chestplate[ \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={"minecraft:binding_curse": 1}, \
   minecraft:tooltip_display={hidden_components:["enchantments"]}, \
@@ -10,7 +13,7 @@ $item replace entity @s armor.chest with minecraft:leather_chestplate[ \
 ]
 
 # Leggings
-$item replace entity @s armor.legs with minecraft:leather_leggings[ \
+$execute unless score _showSkin GameOptions matches 1 run item replace entity @s armor.legs with minecraft:leather_leggings[ \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={"minecraft:binding_curse": 1}, \
   minecraft:tooltip_display={hidden_components:["enchantments"]}, \
@@ -21,7 +24,7 @@ $item replace entity @s armor.legs with minecraft:leather_leggings[ \
 ]
 
 # Boots
-$item replace entity @s armor.feet with minecraft:leather_boots[ \
+$execute unless score _showSkin GameOptions matches 1 run item replace entity @s armor.feet with minecraft:leather_boots[ \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={"minecraft:binding_curse": 1}, \
   minecraft:tooltip_display={hidden_components:["enchantments"]}, \
@@ -35,7 +38,6 @@ $item replace entity @s armor.feet with minecraft:leather_boots[ \
 $execute unless entity @s[tag=$(name)] run function mines_and_mobs:classes/$(name)/weapon
 function mines_and_mobs:classes/clear_tags
 $tag @s add $(name)
-
-data remove storage mines_and_mobs:class class
+execute if entity @s[predicate=mines_and_mobs:uses_arrows] run give @s arrow
 
 function mines_and_mobs:stats/apply_all

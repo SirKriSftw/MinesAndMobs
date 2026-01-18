@@ -1,0 +1,2 @@
+$item modify entity @s hotbar.$(current_item) mines_and_mobs:repair_one
+$execute if items entity @s hotbar.$(current_item) #mines_and_mobs:bow[minecraft:damage=0] run function mines_and_mobs:stats/_reload/give
