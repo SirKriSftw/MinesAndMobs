@@ -1,5 +1,6 @@
 data remove storage mines_and_mobs:class class
 $execute if entity @s[tag=$(name)] run return 0
+clear @s #mines_and_mobs:armor
 
 # Chestplate
 $execute unless score _showSkin GameOptions matches 1 run item replace entity @s armor.chest with minecraft:leather_chestplate[ \
