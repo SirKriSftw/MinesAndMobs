@@ -3,4 +3,4 @@ data modify entity @e[type=marker,tag=ray_worker,limit=1,distance=..2, sort=near
 
 $data modify entity @s[nbt=!{data:{hit_by:[$(ray_id)]}}] data.hit_by append value $(ray_id)
 
-$function $(on_hit_mob)
+$function $(on_hit_mob) with entity @e[type=marker,tag=ray_worker,limit=1,distance=..2, sort=nearest] data

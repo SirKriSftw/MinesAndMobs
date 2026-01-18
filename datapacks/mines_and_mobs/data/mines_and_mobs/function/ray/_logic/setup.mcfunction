@@ -8,6 +8,7 @@ $data modify entity @s data merge value {\
   range:$(range),\
   speed:$(speed),\
   weight:$(weight),\
+  damage:$(damage),\
   p_mobs:$(p_mobs),\
   p_blocks:$(p_blocks),\
   bounce:$(bounce),\

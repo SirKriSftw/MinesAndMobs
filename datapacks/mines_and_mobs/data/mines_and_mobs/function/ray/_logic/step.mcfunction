@@ -18,7 +18,7 @@ execute at @s align y run execute store result score #y RayCast run data get ent
 execute at @s align z run execute store result score #z RayCast run data get entity @s Pos[2] 1
 
 $execute unless block ~ ~ ~ #mines_and_mobs:is_passable run function mines_and_mobs:ray/detection/block {on_hit_block:"$(on_hit_block)"}
-execute if data entity @s {data:{bounce:1}} unless block ~ ~ ~ air run function mines_and_mobs:ray/detection/bounce
+execute if data entity @s {data:{bounce:1}} unless block ~ ~ ~ #mines_and_mobs:is_passable run function mines_and_mobs:ray/detection/bounce
 execute if data entity @s {data:{hit_block:1b, p_blocks:0}} unless data entity @s {data:{bounce:1}} run data modify entity @s data.range set value 0f
 
 # Range Calculation-------------------

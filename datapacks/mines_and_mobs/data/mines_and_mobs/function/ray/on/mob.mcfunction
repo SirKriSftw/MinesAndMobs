@@ -1,1 +1,1 @@
-damage @s 0 minecraft:magic
+$damage @s $(damage) minecraft:magic

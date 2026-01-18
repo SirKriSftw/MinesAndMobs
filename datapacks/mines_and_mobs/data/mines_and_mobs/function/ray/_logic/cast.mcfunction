@@ -8,6 +8,7 @@ $execute as @e[tag=ray_new,limit=1,distance=..1] at @s run function mines_and_mo
   range:$(range),\
   speed:$(speed),\
   weight:$(weight),\
+  damage:$(damage),\
   p_mobs:$(p_mobs),\
   p_blocks:$(p_blocks),\
   bounce:$(bounce),\

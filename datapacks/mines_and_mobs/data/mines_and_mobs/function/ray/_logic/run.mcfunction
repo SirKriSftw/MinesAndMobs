@@ -16,6 +16,9 @@ function mines_and_mobs:ray/helper/cal_range with storage mines_and_mobs:ray use
 # Set Weight ----
 execute store result storage mines_and_mobs:ray use.weight double 0.1 run data get entity @s SelectedItem.components."minecraft:custom_data".weight
 
+# Set Damage ----
+execute store result storage mines_and_mobs:ray use.damage float 1 run scoreboard players get @s str
+
 # Hit Scan vs Slow Ray ----
 execute unless data storage mines_and_mobs:ray {use:{is_hitscan:0}} run data modify storage mines_and_mobs:ray use.tag set value "slow_cast"
 execute if data storage mines_and_mobs:ray {use:{is_hitscan:1b}} run data modify storage mines_and_mobs:ray use.tag set value "hit_scan"
