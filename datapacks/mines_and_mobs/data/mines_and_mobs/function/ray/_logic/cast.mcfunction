@@ -14,6 +14,8 @@ $execute as @e[tag=ray_new,limit=1,distance=..1] at @s run function mines_and_mo
   bounce:$(bounce),\
   chain:$(chain),\
   lock_on:$(lock_on),\
+  lock_delay:$(lock_delay),\
+  turn_radius:$(turn_radius),\
   on_travel:"$(on_travel)",\
   on_hit_mob:"$(on_hit_mob)",\
   on_hit_block:"$(on_hit_block)",\

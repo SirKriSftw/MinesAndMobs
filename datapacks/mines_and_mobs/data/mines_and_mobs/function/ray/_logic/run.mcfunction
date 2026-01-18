@@ -16,6 +16,10 @@ function mines_and_mobs:ray/helper/cal_range with storage mines_and_mobs:ray use
 # Set Weight ----
 execute store result storage mines_and_mobs:ray use.weight double 0.1 run data get entity @s SelectedItem.components."minecraft:custom_data".weight
 
+# Turn radius + Lock On Delay ----------
+execute store result storage mines_and_mobs:ray use.turn_radius double 1000 run data get entity @s SelectedItem.components."minecraft:custom_data".turn_radius
+execute store result storage mines_and_mobs:ray use.lock_delay int 1 run data get entity @s SelectedItem.components."minecraft:custom_data".lock_delay
+
 # Set Damage ----
 execute store result storage mines_and_mobs:ray use.damage float 1 run scoreboard players get @s str
 
@@ -42,4 +46,4 @@ data modify storage mines_and_mobs:ray use.on_end set from entity @s SelectedIte
 execute anchored eyes at @s positioned ^ ^ ^ run function mines_and_mobs:ray/_logic/cast with storage mines_and_mobs:ray use
 
 # Clean Up After Cast ----
-data remove storage mines_and_mobs:ray use
+#data remove storage mines_and_mobs:ray use

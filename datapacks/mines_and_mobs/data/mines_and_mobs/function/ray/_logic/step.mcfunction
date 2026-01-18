@@ -3,8 +3,8 @@ $tp @s ~ ~ ~ ~ ~$(weight)
 
 # Lock On -------------------
 execute store result score #age Math run data get entity @s data.age
-execute if data entity @s {data:{lock_on:1}} \
-  if score #age Math matches 20.. \
+$execute if data entity @s {data:{lock_on:1}} \
+  if score #age Math matches $(lock_delay).. \
   run function mines_and_mobs:ray/detection/lock_on with entity @s data
 scoreboard players reset #age Math
 

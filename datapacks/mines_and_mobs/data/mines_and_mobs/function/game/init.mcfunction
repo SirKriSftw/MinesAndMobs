@@ -18,10 +18,6 @@ scoreboard objectives add last_x dummy
 scoreboard objectives add last_y dummy
 scoreboard objectives add last_z dummy
 
-# When locking on at MOST move this many degrees / 1000
-scoreboard players set #max_rot RayCast 10000
-scoreboard players set #max_rot_neg RayCast -10000
-
 scoreboard objectives add Timer dummy
 scoreboard objectives add Seconds dummy
 

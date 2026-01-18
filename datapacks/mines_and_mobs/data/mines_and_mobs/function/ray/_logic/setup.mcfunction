@@ -15,6 +15,8 @@ $data modify entity @s data merge value {\
   bounce:$(bounce),\
   chain:$(chain),\
   lock_on:$(lock_on),\
+  lock_delay:$(lock_delay),\
+  turn_radius:$(turn_radius),\
   on_travel:"$(on_travel)",\
   on_hit_mob:"$(on_hit_mob)",\
   on_hit_block:"$(on_hit_block)",\

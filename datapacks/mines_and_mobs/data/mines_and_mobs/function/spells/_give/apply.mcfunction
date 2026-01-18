@@ -13,6 +13,8 @@ $item replace entity @s weapon.mainhand with $(item)[ \
     bounce:$(bounce), \
     chain:$(chain), \
     lock_on:$(lock_on), \
+    lock_delay:$(lock_delay), \
+    turn_radius:$(turn_radius), \
     on_cast_player:'$(on_cast_player)', \
     on_cast_ray:'$(on_cast_ray)', \
     on_hit_mob:'$(on_hit_mob)', \

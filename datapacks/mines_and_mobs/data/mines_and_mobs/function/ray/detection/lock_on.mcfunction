@@ -26,6 +26,9 @@ execute if score #delta_rot_0 Math matches ..-180001 run scoreboard players add 
 execute if score #delta_rot_1 Math matches ..-180001 run scoreboard players add #delta_rot_1 Math 360000
 
 # CLAMP delta by max rotations
+$scoreboard players set #max_rot RayCast $(turn_radius)
+$scoreboard players set #max_rot_neg RayCast -$(turn_radius)
+
 execute if score #delta_rot_0 Math > #max_rot RayCast run scoreboard players operation #delta_rot_0 Math = #max_rot RayCast
 execute if score #delta_rot_0 Math < #max_rot_neg RayCast run scoreboard players operation #delta_rot_0 Math = #max_rot_neg RayCast
 
