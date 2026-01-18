@@ -1,7 +1,14 @@
-# Move Forward-------------------------
+# Bullet Drop ---------------
 $tp @s ~ ~ ~ ~ ~$(weight)
-execute if data entity @s {data:{lock_on:1}} run function mines_and_mobs:ray/detection/lock_on with entity @s data
 
+# Lock On -------------------
+execute store result score #age Math run data get entity @s data.age
+execute if data entity @s {data:{lock_on:1}} \
+  if score #age Math matches 20.. \
+  run function mines_and_mobs:ray/detection/lock_on with entity @s data
+scoreboard players reset #age Math
+
+# Move Forward-------------------------
 $tp @s ^ ^ ^$(speed)
 $execute as @s at @s run function $(on_travel)
 
@@ -25,6 +32,12 @@ execute if data entity @s {data:{hit_block:1b, p_blocks:0}} unless data entity @
 execute store result score @s RayCast run data get entity @s data.range
 scoreboard players remove @s RayCast 1
 execute store result entity @s data.range int 1 run scoreboard players get @s RayCast
+
+# Increase Age------------------
+execute store result score #age Math run data get entity @s data.age
+scoreboard players add #age Math 1
+execute store result entity @s data.age int 1 run scoreboard players get #age Math
+scoreboard players reset #age Math
 
 # Early Return for Slow Cast---------
 execute if entity @s[tag=slow_cast] run return 0

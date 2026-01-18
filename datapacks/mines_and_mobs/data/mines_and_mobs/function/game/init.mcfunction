@@ -9,6 +9,7 @@ scoreboard players set #15 Constants 15
 scoreboard players set #10 Constants 10
 scoreboard players set #5 Constants 5
 scoreboard players set #2 Constants 2
+scoreboard players set #1 Constants 1
 
 scoreboard objectives add GameStates dummy "Game States"
 
@@ -16,6 +17,10 @@ scoreboard objectives add RayCast dummy "Ray Cast"
 scoreboard objectives add last_x dummy
 scoreboard objectives add last_y dummy
 scoreboard objectives add last_z dummy
+
+# When locking on at MOST move this many degrees / 1000
+scoreboard players set #max_rot RayCast 10000
+scoreboard players set #max_rot_neg RayCast -10000
 
 scoreboard objectives add Timer dummy
 scoreboard objectives add Seconds dummy

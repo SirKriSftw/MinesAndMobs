@@ -5,16 +5,16 @@ tp @s ^ ^ ^-0.15
 scoreboard players set #axis RayCast 0
 
 # Check X-axis (Sides of blocks)
-execute if block ~0.1 ~ ~ air run scoreboard players set #axis RayCast 1
-execute if block ~-0.1 ~ ~ air run scoreboard players set #axis RayCast 1
+execute if block ~0.1 ~ ~ #mines_and_mobs:is_passable run scoreboard players set #axis RayCast 1
+execute if block ~-0.1 ~ ~ #mines_and_mobs:is_passable run scoreboard players set #axis RayCast 1
 
 # Check Y-axis (Top/Bottom of blocks)
-execute if block ~ ~0.1 ~ air run scoreboard players set #axis RayCast 2
-execute if block ~ ~-0.1 ~ air run scoreboard players set #axis RayCast 2
+execute if block ~ ~0.1 ~ #mines_and_mobs:is_passable run scoreboard players set #axis RayCast 2
+execute if block ~ ~-0.1 ~ #mines_and_mobs:is_passable run scoreboard players set #axis RayCast 2
 
 # Check Z-axis (Sides of blocks)
-execute if block ~ ~ ~0.1 air run scoreboard players set #axis RayCast 3
-execute if block ~ ~ ~-0.1 air run scoreboard players set #axis RayCast 3
+execute if block ~ ~ ~0.1 #mines_and_mobs:is_passable run scoreboard players set #axis RayCast 3
+execute if block ~ ~ ~-0.1 #mines_and_mobs:is_passable run scoreboard players set #axis RayCast 3
 
 # 3. Apply the Bounce
 # If hitting X or Z (Sides): Mirror the Yaw

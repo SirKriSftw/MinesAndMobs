@@ -5,6 +5,7 @@ execute store result storage mines_and_mobs:global ray_id int 1 run scoreboard p
 
 # Set entity data
 $data modify entity @s data merge value {\
+  age:0,\
   range:$(range),\
   speed:$(speed),\
   weight:$(weight),\
