@@ -37,3 +37,5 @@ function mines_and_mobs:classes/clear_tags
 $tag @s add $(name)
 
 data remove storage mines_and_mobs:class class
+
+function mines_and_mobs:stats/apply_all

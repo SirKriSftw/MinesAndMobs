@@ -1,0 +1,27 @@
+{
+    "values": [
+        "#minecraft:air",
+        "#minecraft:all_signs",
+        "#minecraft:banners",
+        "#minecraft:bars",
+        "#minecraft:bee_growables",
+        "#minecraft:buttons",
+        "#minecraft:can_glide_through",
+        "#minecraft:climbable",
+        "#minecraft:edible_for_sheep",
+        "#minecraft:fire",
+        "#minecraft:flowers",
+        "#minecraft:impermeable",
+        "minecraft:structure_void",
+        "minecraft:light",
+        "minecraft:tripwire",
+        "minecraft:torch",
+        "minecraft:wall_torch",
+        "minecraft:redstone_torch",
+        "minecraft:redstone_wall_torch",
+        "minecraft:soul_torch", 
+        "minecraft:soul_wall_torch",
+        "minecraft:copper_torch",
+        "minecraft:copper_wall_torch"
+    ]
+}
