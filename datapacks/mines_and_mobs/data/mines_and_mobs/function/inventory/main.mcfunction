@@ -1,0 +1,1 @@
+execute as @a[advancements={mines_and_mobs:clean_inv=true}] at @s run function mines_and_mobs:inventory/slots/clean
