@@ -1,0 +1,2 @@
+$data modify storage mines_and_mobs:temp selected_sound set from storage mines_and_mobs:temp sounds[$(sound_index)]
+function mines_and_mobs:spells/boulder_throw/sound/play with storage mines_and_mobs:temp

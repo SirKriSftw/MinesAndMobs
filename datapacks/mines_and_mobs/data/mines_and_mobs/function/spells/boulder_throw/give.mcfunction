@@ -4,6 +4,6 @@ data modify storage mines_and_mobs:give spell_args merge value {bounce:1b}
 data modify storage mines_and_mobs:give spell_args merge value {on_travel:"mines_and_mobs:spells/boulder_throw/on/travel"}
 data modify storage mines_and_mobs:give spell_args merge value {on_hit_mob:"mines_and_mobs:spells/boulder_throw/on/hit"}
 data modify storage mines_and_mobs:give spell_args merge value {on_hit_block:"mines_and_mobs:spells/boulder_throw/on/hit"}
-data modify storage mines_and_mobs:give spell_args merge value {on_end:"mines_and_mobs:none"}
+data modify storage mines_and_mobs:give spell_args merge value {on_end:"mines_and_mobs:spells/boulder_throw/on/end"}
 
 execute as @s run function mines_and_mobs:spells/_give/spell

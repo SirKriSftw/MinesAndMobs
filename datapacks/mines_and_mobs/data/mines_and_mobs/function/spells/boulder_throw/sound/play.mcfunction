@@ -1,0 +1,1 @@
+$playsound minecraft:block.mud.$(selected_sound) block @a ~ ~ ~ 2
