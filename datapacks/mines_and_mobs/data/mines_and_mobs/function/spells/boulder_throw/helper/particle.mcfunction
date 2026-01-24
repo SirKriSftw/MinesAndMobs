@@ -1,0 +1,1 @@
+$particle minecraft:dust_color_transition{from_color:[0.6,0.3,0.2], to_color:[0.4,0.2,0.1], scale:$(scale)} ~ ~ ~ 0 0 0 0 1 force

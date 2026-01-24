@@ -1,3 +1,2 @@
 execute as @e[tag=slow_cast] at @s run function mines_and_mobs:ray/slow/step with entity @s data
-
-tag @e[tag=hit] remove hit
+execute as @e[tag=slow_cast,scores={RayCast=..1}] run function mines_and_mobs:ray/on/end with entity @s data

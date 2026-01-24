@@ -1,0 +1,11 @@
+{
+    "values": [
+        "#mines_and_mobs:enemy/bugs",
+        "#mines_and_mobs:enemy/illagers",
+        "#mines_and_mobs:enemy/nether",
+        "#mines_and_mobs:enemy/skeletons",
+        "#mines_and_mobs:enemy/zombies",
+        "phantom",
+        "wither"
+    ]
+}

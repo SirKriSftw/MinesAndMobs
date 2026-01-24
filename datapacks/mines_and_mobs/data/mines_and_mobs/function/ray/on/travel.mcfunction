@@ -1,1 +1,1 @@
-execute at @s run particle end_rod ~ ~ ~ 0 0 0 0 0 force
+$execute at @s run particle $(particle) ~ ~ ~ 0 0 0 0 0 force

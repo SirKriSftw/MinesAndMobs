@@ -1,66 +1,46 @@
-data modify storage mines_and_mobs:npc vil.trades set value [\
+$data modify storage mines_and_mobs:npc vil.trades set value [\
   {\
-    buy:{id:"copper_nugget", count:10, \
-      components:{\
-        custom_name:{"text":"Bronze Nugget","italic":false,"color":"#CE8946"}\
-      }\
+    buy:{id:"$(bronze_nugget_id)", count:10, \
+      components: $(bronze_nugget_components)\
     },\ 
-    sell:{id:"copper_ingot", count:1, \
-      components:{\
-        custom_name:{"text":"Bronze Bar","italic":false,"color":"#CE8946"}\
-      }\
+    sell:{id:"$(bronze_bar_id)", count:1, \
+      components: $(bronze_bar_components)\
     },\ 
     maxUses:2147483647, rewardExp: 0\
   },\
   {\
-    buy:{id:"copper_ingot", count:10, \
-      components:{\
-        custom_name:{"text":"Bronze Bar","italic":false,"color":"#CE8946"}\
-      }\
+    buy:{id:"$(bronze_bar_id)", count:10, \
+      components: $(bronze_bar_components)\
     },\ 
-    sell:{id:"iron_nugget", count:1, \
-      components:{\
-        custom_name:{"text":"Silver Nugget","italic":false,"color":"#C0C0C0"}\
-      }\
+    sell:{id:"$(silver_nugget_id)", count:1, \
+      components:$(silver_nugget_components)\
     },\ 
     maxUses:2147483647, rewardExp: 0\
   },\
   {\
-    buy:{id:"iron_nugget", count:10, \
-      components:{\
-        custom_name:{"text":"Silver Nugget","italic":false,"color":"#C0C0C0"}\
-      }\
+    buy:{id:"$(silver_nugget_id)", count:10, \
+      components:$(silver_nugget_components)\
     },\ 
-    sell:{id:"iron_ingot", count:1, \
-      components:{\
-        custom_name:{"text":"Silver Bar","italic":false,"color":"#C0C0C0"}\
-      }\
+    sell:{id:"$(silver_bar_id)", count:1, \
+      components:$(silver_bar_components)\
     },\ 
     maxUses:2147483647, rewardExp: 0\
   },\
   {\
-    buy:{id:"iron_ingot", count:10, \
-      components:{\
-        custom_name:{"text":"Silver Bar","italic":false,"color":"#C0C0C0"}\
-      }\
+    buy:{id:"$(silver_bar_id)", count:10, \
+      components:$(silver_bar_components)\
     },\ 
-    sell:{id:"gold_nugget", count:1, \
-      components:{\
-        custom_name:{"text":"Gold Nugget","italic":false,"color":"#D2AF26"}\
-      }\
+    sell:{id:"$(gold_nugget_id)", count:1, \
+      components:$(gold_nugget_components)\
     },\ 
     maxUses:2147483647, rewardExp: 0\
   },\
   {\
-    buy:{id:"gold_nugget", count:10, \
-      components:{\
-        custom_name:{"text":"Gold Nugget","italic":false,"color":"#D2AF26"}\
-      }\
+    buy:{id:"$(gold_nugget_id)", count:10, \
+      components:$(gold_nugget_components)\
     },\ 
-    sell:{id:"gold_ingot", count:1, \
-      components:{\
-        custom_name:{"text":"Gold Bar","italic":false,"color":"#D2AF26"}\
-      }\
+    sell:{id:"$(gold_bar_id)", count:1, \
+      components:$(gold_bar_components)\
     },\ 
     maxUses:2147483647, rewardExp: 0\
   },\
@@ -82,67 +62,47 @@ data modify storage mines_and_mobs:npc vil.trades set value [\
   \
   \
   {\
-    sell:{id:"copper_nugget", count:10, \
-      components:{\
-        custom_name:{"text":"Bronze Nugget","italic":false,"color":"#CE8946"}\
-      }\
+    sell:{id:"$(bronze_nugget_id)", count:10, \
+      components:$(bronze_nugget_components)\
     },\ 
-    buy:{id:"copper_ingot", count:1, \
-      components:{\
-        custom_name:{"text":"Bronze Bar","italic":false,"color":"#CE8946"}\
-      }\
+    buy:{id:"$(bronze_bar_id)", count:1, \
+      components:$(bronze_bar_components)\
     },\ 
     maxUses:2147483647, rewardExp: 0\
   },\
   {\
-    sell:{id:"copper_ingot", count:10, \
-      components:{\
-        custom_name:{"text":"Bronze Bar","italic":false,"color":"#CE8946"}\
-      }\
+    sell:{id:"$(bronze_bar_id)", count:10, \
+      components:$(bronze_bar_components)\
     },\ 
-    buy:{id:"iron_nugget", count:1, \
-      components:{\
-        custom_name:{"text":"Silver Nugget","italic":false,"color":"#C0C0C0"}\
-      }\
+    buy:{id:"$(silver_nugget_id)", count:1, \
+      components:$(silver_nugget_components)\
     },\ 
     maxUses:2147483647, rewardExp: 0\
   },\
   {\
-    sell:{id:"iron_nugget", count:10, \
-      components:{\
-        custom_name:{"text":"Silver Nugget","italic":false,"color":"#C0C0C0"}\
-      }\
+    sell:{id:"$(silver_nugget_id)", count:10, \
+      components:$(silver_nugget_components)\
     },\ 
-    buy:{id:"iron_ingot", count:1, \
-      components:{\
-        custom_name:{"text":"Silver Bar","italic":false,"color":"#C0C0C0"}\
-      }\
+    buy:{id:"$(silver_bar_id)", count:1, \
+      components:$(silver_bar_components)\
     },\ 
     maxUses:2147483647, rewardExp: 0\
   },\
   {\
-    sell:{id:"iron_ingot", count:10, \
-      components:{\
-        custom_name:{"text":"Silver Bar","italic":false,"color":"#C0C0C0"}\
-      }\
+    sell:{id:"$(silver_bar_id)", count:10, \
+      components:$(silver_bar_components)\
     },\ 
-    buy:{id:"gold_nugget", count:1, \
-      components:{\
-        custom_name:{"text":"Gold Nugget","italic":false,"color":"#D2AF26"}\
-      }\
+    buy:{id:"$(gold_nugget_id)", count:1, \
+      components:$(gold_nugget_components)\
     },\ 
     maxUses:2147483647, rewardExp: 0\
   },\
   {\
-    sell:{id:"gold_nugget", count:10, \
-      components:{\
-        custom_name:{"text":"Gold Nugget","italic":false,"color":"#D2AF26"}\
-      }\
+    sell:{id:"$(gold_nugget_id)", count:10, \
+      components:$(gold_nugget_components)\
     },\ 
-    buy:{id:"gold_ingot", count:1, \
-      components:{\
-        custom_name:{"text":"Gold Bar","italic":false,"color":"#D2AF26"}\
-      }\
+    buy:{id:"$(gold_bar_id)", count:1, \
+      components:$(gold_bar_components)\
     },\ 
     maxUses:2147483647, rewardExp: 0\
   }\

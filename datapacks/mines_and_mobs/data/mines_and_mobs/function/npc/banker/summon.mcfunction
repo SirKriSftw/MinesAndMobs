@@ -1,7 +1,9 @@
 data modify storage mines_and_mobs:npc vil.name set value "banker"
 data modify storage mines_and_mobs:npc vil.display_name set value "Banker"
 
-function mines_and_mobs:npc/banker/trades
+function mines_and_mobs:items/money/all
+function mines_and_mobs:npc/banker/trades with storage mines_and_mobs:items money
+data remove storage mines_and_mobs:items money
 
 function mines_and_mobs:npc/_generic/summon {\
   name: "banker",\

@@ -10,4 +10,4 @@ function mines_and_mobs:inventory/slots/lock_loop with storage mines_and_mobs:te
 
 data remove storage mines_and_mobs:temp current_inv_slot
 scoreboard players reset #current_inv_slot Math
-advancement revoke @s from mines_and_mobs:clean_inv
+#advancement revoke @s from mines_and_mobs:clean_inv

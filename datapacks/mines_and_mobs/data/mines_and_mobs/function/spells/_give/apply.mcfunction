@@ -4,6 +4,7 @@ $item replace entity @s weapon.mainhand with $(item)[ \
   lore=$(lore), \
   custom_data={ \
     mines_and_mobs_weapon:1b, \
+    cant_drop: 1b, \
     range:$(range), \
     speed:$(speed), \
     weight:$(weight), \

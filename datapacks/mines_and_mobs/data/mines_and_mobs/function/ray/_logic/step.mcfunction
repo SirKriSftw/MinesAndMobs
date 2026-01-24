@@ -5,6 +5,7 @@ $tp @s ~ ~ ~ ~ ~$(weight)
 execute store result score #age Math run data get entity @s data.age
 $execute if data entity @s {data:{lock_on:1}} \
   if score #age Math matches $(lock_delay).. \
+  if entity @e[type=#mines_and_mobs:enemy, distance=..$(lock_dist), nbt=!{data:{hit_by:[$(ray_id)]}}, limit=1, sort=nearest] \
   run function mines_and_mobs:ray/detection/lock_on with entity @s data
 scoreboard players reset #age Math
 
@@ -13,7 +14,10 @@ $tp @s ^ ^ ^$(speed)
 $execute as @s at @s run function $(on_travel)
 
 # Mob Detection-------------------------
-$execute at @s positioned ~ ~ ~ as @e[tag=enemy,distance=..2.5,tag=!hit] positioned ~ ~0.5 ~ if predicate mines_and_mobs:is_hit run function mines_and_mobs:ray/detection/mob {ray_id: $(ray_id), on_hit_mob:"$(on_hit_mob)"}
+$execute at @s positioned ~ ~ ~ \
+  as @e[type=#mines_and_mobs:enemy, distance=..2.5, nbt=!{data:{hit_by:[$(ray_id)]}}, limit=1, sort=nearest] positioned ~ ~0.5 ~ \
+  if predicate mines_and_mobs:is_hit \
+  run function mines_and_mobs:ray/detection/mob {ray_id: $(ray_id), on_hit_mob:"$(on_hit_mob)"}
 execute if data entity @s {data:{hit_mob:1b, p_mobs:0}} unless data entity @s {data: {chain:1}} run data modify entity @s data.range set value 0f
 execute if data entity @s {data:{hit_mob:1b, chain:1}} run function mines_and_mobs:ray/detection/lock_on with entity @s data
 

@@ -6,7 +6,7 @@ data merge storage mines_and_mobs:default {spell: {p_mobs:0b, p_blocks:0b, bounc
 data merge storage mines_and_mobs:default {spell: {turn_radius:10i, lock_delay:20, lock_dist:25.0f}} 
 data merge storage mines_and_mobs:default {spell: {on_cast_player: "mines_and_mobs:none"}}
 data merge storage mines_and_mobs:default {spell: {on_cast_ray: "mines_and_mobs:none"}}
-data merge storage mines_and_mobs:default {spell: {on_travel: "mines_and_mobs:ray/on/travel"}}
+data merge storage mines_and_mobs:default {spell: {on_travel: "mines_and_mobs:ray/on/travel {particle: end_rod}"}}
 data merge storage mines_and_mobs:default {spell: {on_hit_mob: "mines_and_mobs:ray/on/mob"}}
 data merge storage mines_and_mobs:default {spell: {on_hit_block: "mines_and_mobs:ray/on/block"}}
 data merge storage mines_and_mobs:default {spell: {on_end: "mines_and_mobs:ray/on/end"}}

@@ -1,8 +1,0 @@
-{
-  "criteria": {
-    "clean_inv": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {}
-    }
-  }
-}

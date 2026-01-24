@@ -47,4 +47,4 @@ data modify storage mines_and_mobs:ray use.on_end set from entity @s SelectedIte
 execute anchored eyes at @s positioned ^ ^ ^ run function mines_and_mobs:ray/_logic/cast with storage mines_and_mobs:ray use
 
 # Clean Up After Cast ----
-#data remove storage mines_and_mobs:ray use
+data remove storage mines_and_mobs:ray use
