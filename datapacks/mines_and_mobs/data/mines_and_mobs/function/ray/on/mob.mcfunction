@@ -1,1 +1,1 @@
-$damage @s $(damage) minecraft:magic
+function mines_and_mobs:spells/_generic/damage with entity @e[type=marker,tag=ray_worker,limit=1,distance=..2, sort=nearest] data

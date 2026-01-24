@@ -1,0 +1,10 @@
+[
+    {
+        "function": "minecraft:set_name",
+        "name": {"text": "Silver Bar", "italic": false, "color": "#C0C0C0"}
+    }
+    , {
+        "function": "minecraft:set_custom_data",
+        "tag": "{mines_and_mobs_money: true}"
+    }
+]

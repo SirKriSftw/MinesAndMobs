@@ -4,6 +4,9 @@ execute as @e[tag=ray_new,limit=1,distance=..1] anchored eyes positioned ^ ^ ^0.
 $execute as @e[tag=ray_new,limit=1,distance=..1] run function $(on_cast_ray)
 $function $(on_cast_player)
 
+# Put playerhead into Enderchest to grab 'Name' from caster
+loot replace entity @s enderchest.0 loot mines_and_mobs:player_head
+
 $execute as @e[tag=ray_new,limit=1,distance=..1] at @s run function mines_and_mobs:ray/_logic/setup {\
   range:$(range),\
   speed:$(speed),\

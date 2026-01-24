@@ -7,4 +7,4 @@ function mines_and_mobs:map/main
 function mines_and_mobs:ray/main
 
 execute store result score #ItemCt Math run execute if entity @e[type=item]
-execute if score #ItemCt Math matches 10.. run kill @e[type=item]
+execute if score #ItemCt Math matches 100.. run kill @e[type=item]

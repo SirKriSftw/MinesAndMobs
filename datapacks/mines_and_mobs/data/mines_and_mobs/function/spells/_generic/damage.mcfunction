@@ -1,1 +1,1 @@
-$damage @s $(damage) minecraft:magic
+$damage @s $(damage) minecraft:player_attack by $(caster_name)

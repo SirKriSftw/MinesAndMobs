@@ -1,0 +1,10 @@
+[
+    {
+        "function": "minecraft:set_name",
+        "name": {"text": "Gold Bar", "italic": false, "color": "#D2AF26"}
+    }
+    , {
+        "function": "minecraft:set_custom_data",
+        "tag": "{mines_and_mobs_money: true}"
+    }
+]

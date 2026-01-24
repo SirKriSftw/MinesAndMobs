@@ -26,6 +26,10 @@ $data modify entity @s data merge value {\
   hit_block: 0b\
 }
 
+# Get Caster UUID and Username
+data modify entity @s data.caster_uuid set from entity @p UUID
+data modify entity @s data.caster_name set from entity @p EnderItems[0].components."minecraft:profile".name
+
 # Remove the new tag
 tag @s remove ray_new
 

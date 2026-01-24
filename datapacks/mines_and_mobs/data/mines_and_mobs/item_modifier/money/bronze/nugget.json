@@ -1,0 +1,10 @@
+[
+    {
+        "function": "minecraft:set_name",
+        "name": {"text": "Bronze Nugget", "italic": false, "color": "#CE8946"}
+    }
+    , {
+        "function": "minecraft:set_custom_data",
+        "tag": "{mines_and_mobs_money: true}"
+    }
+]
