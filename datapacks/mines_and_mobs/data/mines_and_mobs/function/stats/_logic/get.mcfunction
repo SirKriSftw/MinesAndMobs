@@ -9,4 +9,5 @@ execute store result storage mines_and_mobs:macro stats.wis_lvl double 0.5 run s
 
 execute store result storage mines_and_mobs:macro stats.int_lvl double 1 run scoreboard players get @s int
 
-execute store result storage mines_and_mobs:macro stats.cha_lvl double 1 run scoreboard players get @s cha
+# Every 5 lvls = 1 Luck
+execute store result storage mines_and_mobs:macro stats.cha_lvl double 0.2 run scoreboard players get @s cha

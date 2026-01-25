@@ -2,7 +2,7 @@
     "pools": [
         {
             "rolls": 1,
-            "bonus_rolls": 0.1,
+            "bonus_rolls": 0.5,
             "entries": [
                 {
                     "weight": 30,
@@ -46,17 +46,8 @@
                     ],
                     "conditions": [
                         {
-                            "condition": "minecraft:entity_properties",
-                            "entity":"attacker",
-                            "predicate": {
-                                "effects": {
-                                    "luck": {
-                                        "amplifier": {
-                                            "min": 5
-                                        }
-                                    }
-                                }
-                            }
+                            "condition": "minecraft:reference",
+                            "name": "mines_and_mobs:luck/min_2"
                         }
                     ]
                 } 
@@ -73,17 +64,8 @@
                     ],
                     "conditions": [
                         {
-                            "condition": "minecraft:entity_properties",
-                            "entity":"attacker",
-                            "predicate": {
-                                "effects": {
-                                    "luck": {
-                                        "amplifier": {
-                                            "min": 10
-                                        }
-                                    }
-                                }
-                            }
+                            "condition": "minecraft:reference",
+                            "name": "mines_and_mobs:luck/min_3"
                         }
                     ]
                 } 
@@ -100,17 +82,8 @@
                     ],
                     "conditions": [
                         {
-                            "condition": "minecraft:entity_properties",
-                            "entity":"attacker",
-                            "predicate": {
-                                "effects": {
-                                    "luck": {
-                                        "amplifier": {
-                                            "min": 15
-                                        }
-                                    }
-                                }
-                            }
+                            "condition": "minecraft:reference",
+                            "name": "mines_and_mobs:luck/min_4"
                         }
                     ]
                 } 
@@ -127,17 +100,8 @@
                     ],
                     "conditions": [
                         {
-                            "condition": "minecraft:entity_properties",
-                            "entity":"attacker",
-                            "predicate": {
-                                "effects": {
-                                    "luck": {
-                                        "amplifier": {
-                                            "min": 20
-                                        }
-                                    }
-                                }
-                            }
+                            "condition": "minecraft:reference",
+                            "name": "mines_and_mobs:luck/min_5"
                         }
                     ]
                 }
