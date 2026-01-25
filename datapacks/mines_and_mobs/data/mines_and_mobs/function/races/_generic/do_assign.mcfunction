@@ -1,3 +1,5 @@
+$execute if entity @s[tag=$(name)] run return 0
+
 $item replace entity @s armor.head with $(item)[ \
   minecraft:custom_name=[{"text":"$(display_name)","italic":false,"color":"$(hex_color)"}], \
   minecraft:enchantment_glint_override=false, \

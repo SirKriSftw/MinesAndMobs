@@ -31,6 +31,12 @@
                             "function": "minecraft:reference",
                             "name": "mines_and_mobs:money/bronze/bar"
                         }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:reference",
+                            "name": "mines_and_mobs:luck/min_1"
+                        }
                     ]
                 }
                 , {
