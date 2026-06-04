@@ -1,0 +1,1 @@
+function mines_and_mobs:map/grid/start {x:-128, y:0, z:-128, rows:31, cols:31, y2:20, is_clear: true}
