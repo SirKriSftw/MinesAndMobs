@@ -1,0 +1,24 @@
+{
+    "spawn_range": 8,
+    "total_mobs": 10,
+    "simultaneous_mobs": 3,
+    "total_mobs_added_per_player": 3,
+    "simultaneous_mobs_added_per_player": 1,
+    "ticks_between_spawn": 60,
+    "spawn_potentials": [
+        {
+            "weight": 1,
+            "data": {
+                "entity": {
+                    "id": "minecraft:zombie"
+                }
+            }
+        }
+    ],
+    "loot_tables_to_eject": [
+        {
+            "weight": 1,
+            "data": "mines_and_mobs:basic_drop"
+        }
+    ]
+}
