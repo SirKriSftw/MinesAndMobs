@@ -1,5 +1,5 @@
 $item modify entity @s weapon.mainhand { \
-  "function": "minecraft:set_components", \
+  "type": "minecraft:set_components", \
   "components": { \
     "minecraft:consumable": { \
       "consume_seconds": $(cast_time), \

@@ -1,5 +1,5 @@
 $item modify entity @s weapon.mainhand {\
-    "function":"minecraft:set_attributes",\
+    "type":"minecraft:set_attributes",\
     "modifiers":[\
         {"attribute":"minecraft:attack_damage","id":"mines_and_mobs:str_level","amount":$(str_lvl),"operation":"add_value","slot":"mainhand"}\
     ],\

@@ -39,6 +39,7 @@ $scoreboard players set _c_cols Math $(curr_col)
 
 # Set corner pieces
 scoreboard players reset _is_corner Math
+# (0,0) (0, Y) (X, 0) (X, Y)
 execute if score _c_rows Math matches 0 if score _c_cols Math matches 0 run scoreboard players set _is_corner Math 1
 $execute if score _c_rows Math matches 0 if score _c_cols Math matches $(cols) run scoreboard players set _is_corner Math 1
 $execute if score _c_cols Math matches 0 if score _c_rows Math matches $(rows) run scoreboard players set _is_corner Math 1

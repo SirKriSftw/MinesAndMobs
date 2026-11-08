@@ -1,2 +1,2 @@
-$item modify entity @s hotbar.$(current_item) mines_and_mobs:repair_one
-$execute if items entity @s hotbar.$(current_item) #mines_and_mobs:bow[minecraft:damage=0] run function mines_and_mobs:stats/_reload/give
+$item modify entity @s weapon.mainhand {"type": "minecraft:set_components", "components": {"minecraft:damage": $(new_damage)}}
+execute if items entity @s weapon.mainhand #mines_and_mobs:bow[minecraft:damage=0] run function mines_and_mobs:stats/_reload/give
