@@ -11,105 +11,66 @@
                 }
                 , {
                     "weight": 65,
-                    "quality": -0.25,
+                    "quality": -4,
                     "type": "minecraft:item",
                     "name": "minecraft:copper_nugget",
-                    "functions": [
-                        {
-                            "function": "minecraft:reference",
-                            "name": "mines_and_mobs:money/bronze/nugget"
-                        }
-                    ]
+                    "modifier": ["mines_and_mobs:money/bronze/nugget"]
                 }
                 , {
                     "weight": 5,
-                    "quality": -0.1,
+                    "quality": -1,
                     "type": "minecraft:item",
                     "name": "minecraft:copper_ingot",
-                    "functions": [
-                        {
-                            "function": "minecraft:reference",
-                            "name": "mines_and_mobs:money/bronze/bar"
-                        }
-                    ],
-                    "conditions": [
-                        {
-                            "condition": "minecraft:reference",
-                            "name": "mines_and_mobs:luck/min_1"
-                        }
-                    ]
+                    "modifier": ["mines_and_mobs:money/bronze/bar"],
+                    "condition": {
+                        "type": "all_of",
+                        "terms": ["mines_and_mobs:luck/min_1"]
+                    }
                 }
                 , {
                     "weight": 10,
-                    "quality": 0.3,
+                    "quality": 1,
                     "type": "minecraft:item",
                     "name": "minecraft:iron_nugget",
-                    "functions": [
+                    "modifier": ["mines_and_mobs:money/silver/nugget"],
+                    "condition": 
                         {
-                            "function": "minecraft:reference",
-                            "name": "mines_and_mobs:money/silver/nugget"
-                        }
-                    ],
-                    "conditions": [
-                        {
-                            "condition": "minecraft:reference",
-                            "name": "mines_and_mobs:luck/min_2"
-                        }
-                    ]
+                            "type": "all_of",
+                            "terms": ["mines_and_mobs:luck/min_2"]
+                        }                    
                 } 
                 , {
                     "weight": 10,
-                    "quality": 0.3,
+                    "quality": 1,
                     "type": "minecraft:item",
                     "name": "minecraft:iron_ingot",
-                    "functions": [
-                        {
-                            "function": "minecraft:reference",
-                            "name": "mines_and_mobs:money/silver/bar"
-                        }
-                    ],
-                    "conditions": [
-                        {
-                            "condition": "minecraft:reference",
-                            "name": "mines_and_mobs:luck/min_3"
-                        }
-                    ]
+                    "modifier": ["mines_and_mobs:money/silver/bar"],
+                    "condition": {
+                        "type": "all_of",
+                        "terms": ["mines_and_mobs:luck/min_3"]
+                    }
                 } 
                 , {
                     "weight": 5,
-                    "quality": 0.2,
+                    "quality": 2,
                     "type": "minecraft:item",
                     "name": "minecraft:gold_nugget",
-                    "functions": [
-                        {
-                            "function": "minecraft:reference",
-                            "name": "mines_and_mobs:money/gold/nugget"
-                        }
-                    ],
-                    "conditions": [
-                        {
-                            "condition": "minecraft:reference",
-                            "name": "mines_and_mobs:luck/min_4"
-                        }
-                    ]
+                    "modifier": ["mines_and_mobs:money/gold/nugget"],
+                    "condition": {
+                        "type": "all_of",
+                        "terms": ["mines_and_mobs:luck/min_4"]
+                    }
                 } 
                 , {
                     "weight": 5,
-                    "quality": 0.2,
+                    "quality": 2,
                     "type": "minecraft:item",
                     "name": "minecraft:gold_ingot",
-                    "functions": [
-                        {
-                            "function": "minecraft:reference",
-                            "name": "mines_and_mobs:money/gold/bar"
-                        }
-                    ],
-                    "conditions": [
-                        {
-                            "condition": "minecraft:reference",
-                            "name": "mines_and_mobs:luck/min_5"
-                        }
-                    ]
+                    "modifier": ["mines_and_mobs:money/gold/bar"],
+                    "condition": {
+                        "type": "all_of",
+                        "terms": ["mines_and_mobs:luck/min_5"]
+                    }
                 }
             ]
         }
