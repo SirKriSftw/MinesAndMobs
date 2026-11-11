@@ -1,1 +1,1 @@
-execute as @e[tag=map_processing, limit=5, sort=nearest] at @s run function mines_and_mobs:map/_logic/run with entity @s data
+execute as @e[type=armor_stand, tag=map_processing, limit=5, sort=nearest] at @s run function mines_and_mobs:map/_logic/run with entity @s data

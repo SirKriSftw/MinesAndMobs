@@ -1,0 +1,22 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "bonus_rolls": 0.5,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:green_concrete",
+                    "modifier": {
+                        "type": "set_components",
+                        "components": {
+                            "minecraft:custom_data": {
+                                "mines_and_mobs:map_node": "green_concrete"
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

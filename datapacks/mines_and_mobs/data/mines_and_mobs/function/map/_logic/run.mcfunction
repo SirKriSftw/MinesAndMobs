@@ -1,2 +1,2 @@
 tag @s remove map_processing
-$function $(func)
+$execute at @s run function $(func)

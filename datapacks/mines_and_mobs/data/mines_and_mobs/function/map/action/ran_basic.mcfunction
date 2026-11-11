@@ -1,1 +1,0 @@
-function mines_and_mobs:map/_logic/apply_func {func: "mines_and_mobs:map/gen/ran_basic/run"}

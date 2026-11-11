@@ -1,1 +1,2 @@
-function mines_and_mobs:map/grid/start {x:64, y:-55, z:64, rows:15, cols:15}
+##function mines_and_mobs:map/grid/start {x:64, y:-55, z:64, rows:15, cols:15}
+function mines_and_mobs:map/grid/start {x:64, y:-55, z:64, rows:5, cols:5}

@@ -15,6 +15,9 @@ $function mines_and_mobs:map/grid/step {\
     curr_col:0\
 }
 
+execute as @e[tag=edge] run item replace entity @s armor.head with minecraft:iron_helmet
+execute as @e[tag=corner] run item replace entity @s armor.head with minecraft:golden_helmet
+
 # Reset anything after here
 data remove storage mines_and_mobs:math cord
 data remove storage mines_and_mobs:math step

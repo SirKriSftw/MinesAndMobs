@@ -1,1 +1,0 @@
-$fill ~15 ~ ~15 ~ ~ ~ $(fill_block)
