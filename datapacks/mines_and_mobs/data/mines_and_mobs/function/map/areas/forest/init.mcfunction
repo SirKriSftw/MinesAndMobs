@@ -1,7 +1,9 @@
 data modify storage mines_and_mobs:map_gen initialNodes set value [\
-    "green_concrete",\
-    "red_concrete"\
+    "mines_and_mobs:forest/enter",\
+    "mines_and_mobs:forest/exit"\
 ]
+
+data modify storage mines_and_mobs:map_gen endFunc set value "mines_and_mobs:map/areas/forest/gen"
 
 # Not setup yet but idea is:
 # Max number of this type can spawn. Eventually instead of nodes being 1 block they will be structures and 

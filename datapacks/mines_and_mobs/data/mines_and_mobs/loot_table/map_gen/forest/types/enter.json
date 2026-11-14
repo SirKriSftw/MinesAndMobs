@@ -11,7 +11,7 @@
                         "type": "set_components",
                         "components": {
                             "minecraft:custom_data": {
-                                "mines_and_mobs:map_node": "green_concrete"
+                                "mines_and_mobs:map_node": "mines_and_mobs:forest/enter"
                             }
                         }
                     }

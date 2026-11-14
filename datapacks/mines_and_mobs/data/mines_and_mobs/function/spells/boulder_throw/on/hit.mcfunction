@@ -1,4 +1,4 @@
-execute at @s run particle minecraft:block_crumble{block_state:{Name:packed_mud}} ~ ~0.6 ~ 1 0.2 1 5 200 force
+execute at @s run particle minecraft:block_crumble{block_state:{id:packed_mud}} ~ ~0.6 ~ 1 0.2 1 5 200 force
 
 function mines_and_mobs:spells/boulder_throw/sound/start
 
