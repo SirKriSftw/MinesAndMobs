@@ -27,8 +27,12 @@ scoreboard objectives add last_x dummy
 scoreboard objectives add last_y dummy
 scoreboard objectives add last_z dummy
 
+# Global timer
 scoreboard objectives add Timer dummy
 scoreboard objectives add Seconds dummy
+
+# Dungeon timer (only active when in a dungeon)
+scoreboard objectives add Dungeon_Timer dummy "Dungeon Timer"
 
 scoreboard objectives add isCrouching minecraft.custom:minecraft.sneak_time
 

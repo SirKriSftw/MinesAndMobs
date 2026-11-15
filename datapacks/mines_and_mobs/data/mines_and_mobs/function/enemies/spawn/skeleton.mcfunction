@@ -1,0 +1,1 @@
+summon skeleton ~ ~ ~ {equipment:{head:{id:oak_button}},drop_chances:{head:0f}, Tags:["spawned", "enemy"]}

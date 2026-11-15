@@ -1,0 +1,35 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "weight": 50, 
+                    "type": "minecraft:item",
+                    "name": "minecraft:oak_log",
+                    "modifier": {
+                        "type": "set_components",
+                        "components": {
+                            "minecraft:custom_data": {
+                                "mines_and_mobs:spawn_function": "mines_and_mobs:enemies/spawn/zombie"
+                            }
+                        }
+                    }
+                },
+                {
+                    "weight": 50, 
+                    "type": "minecraft:item",
+                    "name": "minecraft:oak_log",
+                    "modifier": {
+                        "type": "set_components",
+                        "components": {
+                            "minecraft:custom_data": {
+                                "mines_and_mobs:spawn_function": "mines_and_mobs:enemies/spawn/skeleton"
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
