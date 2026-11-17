@@ -1,0 +1,1 @@
+give @s slime_spawn_egg[custom_name=Mimic]
