@@ -1,3 +1,4 @@
+say test
 $summon villager ~ ~ ~ {\
   CustomName:"$(display_name)",\
   Silent: 1,\ 
