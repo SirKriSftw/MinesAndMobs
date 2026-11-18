@@ -27,4 +27,4 @@ execute as @e[type=villager, tag=mnm_vil, limit=1, sort=nearest, distance=..2] a
 # Clean up
 data remove storage mines_and_mobs:npc vil
 data remove storage mines_and_mobs:npc model
-#data remove storage mines_and_mobs:npc args
+data remove storage mines_and_mobs:npc args
