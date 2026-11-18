@@ -1,0 +1,2 @@
+execute as @e[type=mannequin, tag=mnm_man] at @s run function mines_and_mobs:npc/_generic/behavoir/model with entity @s data
+execute as @e[type=villager, tag=mnm_vil] at @s run function mines_and_mobs:npc/_generic/behavoir/villager with entity @s data

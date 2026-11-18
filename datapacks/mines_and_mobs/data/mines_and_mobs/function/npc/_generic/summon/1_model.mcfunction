@@ -16,7 +16,3 @@ $summon minecraft:mannequin ~ ~ ~ \
   Invulnerable: 1b,\
   Team: mnm_npcs\
 }
-
-execute as @e[type=minecraft:mannequin, limit=1, sort=nearest] at @s \
-  run function mines_and_mobs:npc/_generic/villager
-data remove storage mines_and_mobs:npc vil

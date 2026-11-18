@@ -1,2 +1,1 @@
-execute as @e[type=mannequin, tag=mnm_man] run function mines_and_mobs:npc/check_link with entity @s data
-execute as @e[type=villager, tag=mnm_vil] run function mines_and_mobs:npc/check_link with entity @s data
+function mines_and_mobs:npc/_generic/behavoir/main
