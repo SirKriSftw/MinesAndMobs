@@ -1,2 +1,1 @@
-execute as @e[type=item_display, tag=mimic] at @s run function mines_and_mobs:enemies/types/mimic/behavoir/item_display
-execute as @e[type=interaction, tag=mimic] at @s run function mines_and_mobs:enemies/types/mimic/behavoir/interaction
+execute as @e[type=item_display, tag=mimic] at @s run function mines_and_mobs:enemies/types/mimic/behavoir/item_display with entity @s data
