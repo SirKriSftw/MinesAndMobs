@@ -1,1 +1,2 @@
 execute as @e[type=item_display, tag=mimic] at @s run function mines_and_mobs:enemies/types/mimic/behavoir/item_display with entity @s data
+execute as @e[type=slime, tag=mimic] at @s run function mines_and_mobs:enemies/types/mimic/behavoir/slime

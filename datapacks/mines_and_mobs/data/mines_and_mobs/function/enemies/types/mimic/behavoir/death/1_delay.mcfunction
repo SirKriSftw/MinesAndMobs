@@ -1,0 +1,1 @@
+execute as @e[type=item_display, tag=dying] run function mines_and_mobs:enemies/types/mimic/behavoir/death/2_apply
